@@ -1,0 +1,16 @@
+<div
+  ng-class="{'has-error': form.disableErrorState !== true && hasError(), 'has-success': form.disableSuccessState !== true && hasSuccess(), 'has-feedback': form.feedback !== false }"
+  ng-controller="sfObibaCountriesUiSelectController"
+  schema-validate="form" sf-field-model>
+  <form-ui-select ng-if="locales && locales.length > 1"
+                  title="form.title"
+                  show-title="!form.notitle"
+                  disabled="form.readonly"
+                  items="data[selectedLocale]"
+                  auto-complete="form.autoComplete"
+                  ng-model-options="{ allowInvalid: true }"
+                  sf-field-model="replaceAll"
+                  model="$$value$$"
+                  multiple="form.multiple"
+                  description="form.description"></form-ui-select>
+</div>

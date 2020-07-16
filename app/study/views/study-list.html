@@ -1,0 +1,101 @@
+<!--
+  ~ Copyright (c) 2018 OBiBa. All rights reserved.
+  ~
+  ~ This program and the accompanying materials
+  ~ are made available under the terms of the GNU Public License v3.0.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<div>
+  <div ng-include="'app/study/views/import/study-view-import.html'"></div>
+
+  <h2>
+    <span>{{path.indexOf('harmonization') > -1 ? 'global.harmonization-studies' : 'global.individual-studies' | translate}}</span>
+  </h2>
+
+  <a ng-href="{{path}}/new" class="btn btn-info" ng-if="hasRole(['mica-administrator','mica-reviewer','mica-editor'])">
+    <i class="fa fa-plus"></i> <span translate>study.add</span>
+  </a>
+  <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal" ng-show="micaConfig.isImportStudiesFeatureEnabled" ng-if="hasRole(['mica-administrator','mica-reviewer','mica-editor'])">
+    <i class="fa fa-upload"></i> <span translate>study.import.button</span>
+  </button>
+
+  <p class="help-block" ng-if="!searching && !hasDocuments() && !loading">
+    <span translate>study.none</span>
+  </p>
+
+  <p ng-if="loading" class="voffset2 loading">
+  </p>
+
+  <div ng-show="searching || hasDocuments()">
+    <div class="row voffset2">
+      <div class="col-xs-4">
+      <span class="input-group input-group-sm no-padding-top">
+        <span class="input-group-addon" id="study-search"><i class="fa fa-search"></i></span>
+        <input ng-model="pagination.searchText" type="text" class="form-control" aria-describedby="study-search">
+      </span>
+      </div>
+      <div class="col-xs-8">
+        <dir-pagination-controls class="pull-right" pagination-id="myPaginationList" on-page-change="pageChanged(newPageNumber, oldPageNumber)"></dir-pagination-controls>
+      </div>
+    </div>
+
+    <div ng-show="hasDocuments()" class="table-responsive">
+      <table class="table table-bordered table-striped">
+        <thead>
+        <tr>
+          <th data-column-name="id">ID</th>
+          <th data-column-name="acronym">{{"study.acronym" | translate}}</th>
+          <th data-column-name="name" class="col-md-6">{{"study.name" | translate}}</th>
+          <th data-column-name="published">{{"publish.published" | translate}}</th>
+          <th data-column-name="obiba.mica.EntityStateDto.studySummaryState::revisionStatus">{{"status" | translate}}</th>
+          <th translate>actions</th>
+        </tr>
+        </thead>
+        <tbody>
+
+        <tr dir-paginate="study in documents | itemsPerPage: limit" pagination-id="myPaginationList" total-items="totalCount" current-page="pagination.current">
+          <td>
+            <a ng-href="{{path}}/{{study.id}}" translate>{{study.id}}</a>
+          </td>
+          <td>
+            <ul class="list-unstyled">
+              <li ng-repeat="acronym in study.acronym">
+                <span class="badge">{{acronym.lang}}</span> {{acronym.value}}
+              </li>
+            </ul>
+          </td>
+          <td>
+            <ul class="list-unstyled">
+              <li ng-repeat="name in study.name">
+                <span class="badge">{{name.lang}}</span> {{name.value}}
+              </li>
+            </ul>
+          </td>
+          <td>
+            <div publish-status state="study['obiba.mica.EntityStateDto.studySummaryState']"></div>
+          </td>
+          <td>
+            {{'publish.status.' + study['obiba.mica.EntityStateDto.studySummaryState'].revisionStatus | translate}}
+          </td>
+          <td>
+            <ul class="list-inline">
+              <li ng-if="study['obiba.mica.EntityStateDto.studySummaryState'].permissions.edit && study['obiba.mica.EntityStateDto.studySummaryState'].revisionStatus === 'DRAFT'">
+                <a ng-href="{{path}}/{{study.id}}/edit" title="{{'edit' | translate}}"><i class="fa fa-pencil"></i></a>
+              </li>
+              <li ng-if="study['obiba.mica.EntityStateDto.studySummaryState'].permissions.delete && study['obiba.mica.EntityStateDto.studySummaryState'].revisionStatus === 'DELETED'">
+                <a href ng-click="deleteDocument(study)" title="{{'delete' | translate}}"><i class="fa fa-trash-o"></i></a>
+              </li>
+              <li ng-if="study['obiba.mica.EntityStateDto.studySummaryState'].revisionStatus === 'UNDER_REVIEW'">
+                <a ng-href="{{path}}/{{study.id}}" title="{{'view' | translate}}"><i class="fa fa-eye"></i></a>
+              </li>
+            </ul>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

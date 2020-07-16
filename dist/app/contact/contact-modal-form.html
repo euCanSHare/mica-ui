@@ -1,0 +1,54 @@
+<!--
+  ~ Copyright (c) 2018 OBiBa. All rights reserved.
+  ~
+  ~ This program and the accompanying materials
+  ~ are made available under the terms of the GNU Public License v3.0.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<div class="modal-content">
+
+  <form name="form" role="form" novalidate class="ng-scope ng-invalid ng-invalid-required ng-dirty ng-valid-minlength" ng-submit="save(form)">
+
+    <div class="modal-header">
+      <button type="button" class="close" aria-hidden="true" ng-click="cancel()">&times;</button>
+      <h4 class="modal-title" id="myStudyLabel">
+        <span>{{'contact.edit.member' | translate:{type: type} }}</span>
+      </h4>
+    </div>
+
+    <div class="modal-body">
+
+      <p class="alert alert-danger" ng-show="form.saveAttempted && form.$invalid" translate="">fix-error</p>
+
+      <div ng-if="isNew" class="form-group">
+        <label class="control-label">
+          <span>{{'contact.search.member' | translate:{type: type} }}</span>
+        </label>
+        <span class="pull-right" ng-show="result.total > 0">{{'total' | translate}} {{result.current}}</span>
+        <ui-select theme="bootstrap" ng-model="selected.contact" reset-search-input="true">
+          <ui-select-match placeholder="{{'contact.search.placeholder' | translate }}">{{contact.firstName}} {{contact.lastName}}</ui-select-match>
+          <ui-select-choices repeat="contact in result.persons track by $index" refresh="findContacts($select.search)" refresh-delay="0" on-highlight="onHighlighted($index, $last, $select.search)">
+            {{contact.firstName}} {{contact.lastName}}
+            <small ng-show="contact.email"><br>{{contact.email}}</small>
+            <small ng-show="contact.institutionName"><br>{{contact.institutionName}}</small>
+          </ui-select-choices>
+        </ui-select>
+      </div>
+      <div sf-model="selected.contact" sf-form="sfForm.definition" sf-schema="sfForm.schema" sf-options="sfOptions"></div>
+    </div>
+
+    <div class="modal-footer">
+      <button type="button" class="btn btn-default" ng-click="cancel()">
+        <span translate>cancel</span>
+      </button>
+      <button type="submit" class="btn btn-primary">
+        <span translate>save</span>
+      </button>
+    </div>
+
+  </form>
+
+</div>

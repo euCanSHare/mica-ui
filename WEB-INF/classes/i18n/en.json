@@ -1,0 +1,2327 @@
+{
+  "language": {
+    "title": "Language",
+    "en": "English",
+    "fr": "French"
+  },
+  "global": {
+    "close-panel" : "Close the panel",
+    "menu": {
+      "home": "Home",
+      "myProfile": "My Profile",
+      "logout": "Sign Out",
+      "admin": "Administration",
+      "language": "Language"
+    },
+    "lastUpdate": "Last Update",
+    "order": "Order",
+    "types": {
+      "string": "String",
+      "integer": "Integer",
+      "decimal": "Decimal",
+      "keyword": "Keyword",
+      "keyword_string": "Keyword and String"
+    },
+    "sort-by": "Sort by",
+    "read-more": "Read more",
+    "search": "Search",
+    "list-search-placeholder": "Search",
+    "localized": "Localized",
+    "repeatable": "Repeatable",
+    "true": "True",
+    "false": "False",
+    "title": "Title",
+    "field": "Field",
+    "criterion": "Criterion",
+    "criteria": "Criteria",
+    "term": "Term",
+    "terms": "Terms",
+    "keywords": "Keywords",
+    "from": "From",
+    "to": "To",
+    "print": "Print",
+    "modified": "Modified",
+    "delete-selected": "Delete Selected Items",
+    "server-error": "An unknown error has occurred, please contact your administrator for assistance.",
+    "new": "New",
+    "add": "Add",
+    "update": "Update",
+    "documentation": "Documentation",
+    "sources": "Sources",
+    "down": "Down",
+    "up": "Up",
+    "detailed": "Detailed",
+    "percentage": "Percentage",
+    "not-applicable": "N/A",
+    "yes": "Yes",
+    "no": "No",
+    "don-know": "Don't know",
+    "update-comment": "Add a comment to describe the changes.",
+    "copied": "Copied",
+    "copy-to-clipboard": "Copy to clipboard",
+    "copy-query": "Copy query",
+    "name": "Name",
+    "default": "Default",
+    "chronological": "Chronological",
+    "network": "Network",
+    "individual-study": "Individual Study",
+    "individual-studies": "Individual Studies",
+    "harmonization-study": "Harmonization Study",
+    "harmonization-studies": "Harmonization Studies",
+    "harmonization-study-population": "Population",
+    "participant-harmonization-study": "Harmonization Study Included",
+    "participant-harmonization-studies": "Harmonization Studies Included",
+    "included-individual-studies": "Individual Studies Included",
+    "included-individual-study": "Individual Study Included",
+    "definition": "Definition",
+    "display": "Display",
+    "key": "Key",
+    "messages": {
+      "error": {
+        "unique-id": "ID must be unique.",
+        "invalid-id": "ID must not contain special characters, use alpha-numerical characters."
+      }
+    }
+  },
+  "pagination": {
+    "of": "of"
+  },
+  "main": {
+    "title": "Welcome to Mica!",
+    "subtitle": "Mica allows you to manage the studies and the datasets of the data portal.",
+    "logged": {
+      "userMessage": "You are logged in as user \"{{username}}\".",
+      "adminMessage": "You are logged in as user \"{{username}}\" with administrator rights."
+    }
+  },
+  "login": {
+    "title": "Authentication",
+    "form": {
+      "username": "User Name",
+      "username.placeholder": "",
+      "password": "Password",
+      "password.placeholder": "",
+      "rememberme": "Automatic Login",
+      "button": "Sign In"
+    },
+    "messages": {
+      "error": {
+        "authentication": "<strong>Authentication failed!</strong> Please check your credentials and try again.",
+        "userBanned": "<strong>Too many login failures.</strong> Please try again later."
+      }
+    }
+  },
+  "metrics": {
+    "mica": {
+      "networks": "Networks",
+      "studies": "Individual Studies",
+      "studies-with-variables": "Individual Studies with Variables",
+      "study-with-variables": "Individual Study with Variables",
+      "harmonization-studies": "Harmonization Studies",
+      "collected-datasets": "Collected Datasets",
+      "harmonized-datasets": "Harmonized Datasets",
+      "variables": "Variables",
+      "study-variables": "Individual Study Variables",
+      "study-variable": "Individual Study Variable",
+      "harmonization-study-variables": "Harmonization Study Variables",
+      "harmonization-study-variable": "Harmonization Study Variable"
+    },
+    "title": "Application Metrics",
+    "refresh.button": "Refresh",
+    "health": {
+      "title": "Heath checks",
+      "database": "Database: ",
+      "email": "Email: ",
+      "stacktrace": "Stacktrace"
+    },
+    "jvm": {
+      "title": "JVM Metrics",
+      "memory": {
+        "title": "Memory",
+        "total": "Total Memory",
+        "heap": "Heap Memory",
+        "nonheap": "Non-Heap Memory"
+      },
+      "threads": {
+        "title": "Threads",
+        "all": "All",
+        "runnable": "Runnable",
+        "timedwaiting": "Timed waiting",
+        "waiting": "Waiting",
+        "blocked": "Blocked",
+        "dump": {
+          "title": "Threads dump",
+          "id": "ID: ",
+          "blockedtime": "Blocked Time",
+          "blockedcount": "Blocked Count",
+          "waitedtime": "Waited Time",
+          "waitedcount": "Waited Count",
+          "lockname": "Lock name",
+          "stacktrace": "Stacktrace",
+          "show": "Show",
+          "hide": "Hide"
+        }
+      },
+      "gc": {
+        "title": "Garbage collections",
+        "marksweepcount": "Mark Sweep count",
+        "marksweeptime": "Mark Sweep time",
+        "scavengecount": "Scavenge count",
+        "scavengetime": "Scavenge time"
+      },
+      "http": {
+        "title": "HTTP requests (events per second)",
+        "active": "Active requests:",
+        "total": "Total requests:",
+        "table": {
+          "code": "Code",
+          "count": "Count",
+          "mean": "Mean",
+          "average": "Average"
+        },
+        "code": {
+          "ok": "Ok",
+          "notfound": "Not Found",
+          "servererror": "Server Error"
+        }
+      }
+    },
+    "servicesstats": {
+      "title": "Services statistics (time in millisecond)",
+      "table": {
+        "name": "Service name",
+        "count": "Count",
+        "mean": "Mean",
+        "min": "Min",
+        "max": "Max",
+        "p50": "p50",
+        "p75": "p75",
+        "p95": "p95",
+        "p99": "p99"
+      }
+    },
+    "ehcache": {
+      "title": "Ehcache statistics",
+      "cachename": "Cache name",
+      "objects": "Objects",
+      "hits": "Hits",
+      "misses": "Misses",
+      "evictioncount": "Eviction count",
+      "mean": "Mean get time (ms)"
+    }
+  },
+  "caching": {
+    "title": "Caching",
+    "help": "Various caches help Mica to be more responsive. Depending on the cache settings, the retention policy can vary a lot (time out, memory and/or disk persistence etc.). See server documentation for more details. After a cache was deleted, it is rebuild during the flow of queries. Dataset variable statistics can be rebuild explicitly, making Mica more resilient when a remote Opal server is down.",
+    "delete-cache": "Delete cache",
+    "build-cache": "Build cache",
+    "all": "All",
+    "all-help": "All caches.",
+    "clear": "Clear",
+    "run": "Run",
+    "opal-taxonomies": "Opal taxonomies",
+    "opal-taxonomies-help": "Taxonomies from primary Opal server. To be cleared after taxonomies have been updated in Opal.",
+    "mica-config": "Mica configuration",
+    "mica-config-help": "Mica system various settings. Cache is automatically cleared each time the configuration is updated.",
+    "aggregations-metadata": "Aggregations metadata",
+    "aggregations-metadata-help": "Acronyms and names of published studies, networks etc. that are used to decorate search results. Cache is automatically cleared each time a new publication is made.",
+    "dataset-variables": "Dataset variables statistics",
+    "dataset-variables-help": "For each dataset, variable summaries are extracted from remote Opal servers. Cache is automatically cleared after a dataset is published.",
+    "agate-subjects-help": "Users details are cached once retrieved from Agate server. To be cleared to synchronize with updated user details.",
+    "authorization": "Authorizations",
+    "authorization-help": "Anything accessed in Mica requires authorization. Cache is automatically cleared after a permission is updated."
+  },
+  "indexing": {
+    "title": "Indexing",
+    "help": "The search engine is based on indexed documents. Each index can be rebuilt without affecting the history of changes and the publication status of the documents.",
+    "build-index": "Build index",
+    "all": "All",
+    "all-help": "Indices about any type of document: network, study, dataset (and associated variables), file, person.",
+    "clear": "Clear",
+    "run": "Run",
+    "networks": "Networks",
+    "networks-help": "Index that allows to search for networks.",
+    "studies": "Studies",
+    "studies-help": "Index that allows to search for studies.",
+    "datasets": "All datasets",
+    "datasets-help": "Index that allows to search for datasets of any type and associated variables.",
+    "collected-datasets": "Collected datasets",
+    "collected-datasets-help": "Index that allows to search for collected datasets and associated variables.",
+    "harmonized-datasets": "Harmonized datasets",
+    "harmonized-datasets-help": "Index that allows to search for harmonized datasets and associated variables.",
+    "persons": "Persons",
+    "persons-help": "Index that allows to search persons who can be associated to studies or networks.",
+    "taxonomies": "Taxonomies",
+    "taxonomies-help": "Index that allows to search for taxonomy terms (i.e. the search criteria)."
+  },
+  "logs": {
+    "title": "Logs",
+    "nbloggers": "There are {{ total }} loggers.",
+    "filter": "Filter",
+    "table": {
+      "name": "Name",
+      "level": "Level"
+    }
+  },
+  "audits": {
+    "title": "Audits",
+    "filter": {
+      "title": "Filter per date",
+      "from": "from",
+      "to": "to",
+      "button": {
+        "weeks": "Weeks",
+        "today": "today",
+        "clear": "clear",
+        "close": "close"
+      }
+    },
+    "table": {
+      "header": {
+        "principal": "User",
+        "date": "Date",
+        "status": "State",
+        "data": "Extra data"
+      },
+      "data": {
+        "remoteAddress": "Remote Address:"
+      }
+    }
+  },
+  "errors": {
+    "title": "Error page!",
+    "403": "You are not authorized to access the page.",
+    "wordCount": "Word count limit exceeded.",
+    "does-not-validate": "The field does not validate.",
+    "localized": {
+      "completed": "The field must be completed in all specified languages."
+    }
+  },
+  "config": {
+    "sets": "Lists",
+    "anonymous-username": "\"Username\" of the anonymous user.",
+    "anonymous-username-help": "User that is configured for unauthenticated Portal usage.",
+    "cart-enabled": "Cart enabled",
+    "cart-enabled-help": "Cart creation and management is enabled.",
+    "cart-time-to-live": "Cart Life Span",
+    "cart-time-to-live-help": "Cart life span in days.",
+    "set-time-to-live": "List Time Span",
+    "set-time-to-live-help": "List time span in days.",
+    "anonymous-create-cart": "Anonymous user has a cart",
+    "anonymous-create-cart-help": "Anonymous user can create and manage a cart.",
+    "sets-analysis-enabled": "Enable analysis",
+    "sets-analysis-enabled-help": "Enable analysis actions (e.g. count entities).",
+    "sets-search-enabled": "Enable search",
+    "sets-search-enabled-help": "Enable launching a search from list or cart pages.",
+    "max-number-sets": "Maximum number of lists",
+    "max-number-sets-help": "Maximum number of lists that a user can create.",
+    "max-items-per-set": "Maximum number of documents",
+    "max-items-per-set-help": "Maximum number of documents a list or the cart can contain.",
+    "opal-sets-views-download-permission": "Allow opal view creation from a list.",
+    "opal-sets-views-download-permission-help": "Manage Opal views download from lists permissions. These views can then be imported to Opal",
+    "opal-views-grouping": "Opal Views Grouping",
+    "opal-views-grouping-label": {
+      "PROJECT_TABLE": "Table",
+      "PROJECT_ENTITY_TYPE": "Project and entity type",
+      "ENTITY_TYPE": "Entity type"
+    },
+    "opal-views-grouping-PROJECT_TABLE-help": "Variables are grouped by their Opal table.",
+    "opal-views-grouping-PROJECT_ENTITY_TYPE-help": "Variables are grouped by Opal project and their entity type.",
+    "opal-views-grouping-ENTITY_TYPE-help": "Variables are grouped by their entity type only.",
+    "short-title": "Configuration",
+    "title": "General Configuration",
+    "title-edit": "Edit General Configuration",
+    "serverIdentification": "Server Identification",
+    "content": "Content",
+    "content-edition": "Edition",
+    "content-access": "Access",
+    "dataSource": "Data Source",
+    "name": "Name",
+    "name-help": "Name of your organization that will be used when sending notification emails.",
+    "publicUrl": "Public URL",
+    "publicUrl-help": "Public base URL of the server that will be used when sending notification emails.",
+    "portalUrl": "Portal URL",
+    "portalUrl-help": "Public base URL of the organisation portal.",
+    "usePublicUrlForSharedLink": "Use the public URL to build the draft document shared links",
+    "usePublicUrlForSharedLink-help": "Use the public URL instead of the portal URL to build the draft document shared links. In other words, use the public pages instead of Drupal pages for showing the non-published version of a document.",
+    "defaultCharSet": "Default Character Set",
+    "languages": "Languages",
+    "languages-help": "Languages into which the content must be capture.",
+    "opal": "Primary Opal Server Public URL",
+    "opal-help": "The public URL of the Opal server that is the source of variables and data summaries when no study-specific one is defined.",
+    "privacy-threshold": "Participant Privacy Threshold",
+    "privacy-threshold-help": "No data summary will be returned if the number of participants is below this threshold.",
+    "opal-credentials": "Opal Credentials",
+    "opal-credentials-help": "When Mica needs to connect to remote Opal server, some credentials must be provided for authentication. These credentials can be based on an encryption key pair (HTTPS only) or a user name and password. See also <a href='http://wiki.obiba.org/display/OPALDOC/Users+and+Groups+Administration' target='_blank'>Opal data access administration documentation</a>.",
+    "encryption-keys": "Encryption Keys",
+    "encryption-keys-help": "HTTPS connection requires to have a private key and a public key (certificate) defined. A self-signed key-pair is available by default. You can provide your own.",
+    "addKeyPair": "Add Keys",
+    "download-certificate": "Download Certificate",
+    "opal-credential-add": "Add Opal Credential",
+    "opal-credential-type": {
+      "USERNAME": "User Name",
+      "PUBLIC_KEY_CERTIFICATE": "Key Pair"
+    },
+    "opalCredentialTitle": "Opal Credential",
+    "opalUrl": "Opal URL",
+    "actions": "Actions",
+    "type": "Type",
+    "create": "Create Key Pair",
+    "import": "Import Key Pair",
+    "username": "User Name",
+    "password": "Password",
+    "confirm": "Confirm Password",
+    "keys": {
+      "titleCreate": "Create Certificate",
+      "titleImport": "Import Certificate",
+      "name": "Common Name",
+      "organization": "Organization",
+      "organizationalUnit": "Organizational Unit",
+      "locality": "Locality",
+      "state": "State",
+      "country": "Country",
+      "algo": "Algorithm",
+      "size": "Size",
+      "private": "Private Key",
+      "public": "Public Key"
+    },
+    "openAccess": "Open access",
+    "openAccess-help": "Access to published documents is opened to everyone.",
+    "variableSummaryRequiresAuthentication": "Restricted access to variable summary statistics",
+    "variableSummaryRequiresAuthentication-help": "The user needs to be identified when accessing to the variable summary statistics (and related operations like contingency table).",
+    "sections": "Sections",
+    "repository-enabled": "Repository enabled",
+    "repository-enabled-help": "Show network, study, dataset, variable pages with the search interface.",
+    "project-enabled": "Project section enabled",
+    "project-enabled-help": "Show approved research projects pages.",
+    "data-access-enabled": "Data access enabled",
+    "data-access-enabled-help": "Show data access pages.",
+    "single-network-enabled": "Single network enabled",
+    "single-network-enabled-help": "Only one network is present in Mica.",
+    "single-study-enabled": "Single study enabled",
+    "single-study-enabled-help": "Only one individual study is present in Mica.",
+    "network-enabled": "Network section enabled",
+    "network-enabled-help": "Network section is accessible.",
+    "collected-dataset-enabled": "Collected datasets section enabled",
+    "collected-dataset-enabled-help": "Collected datasets section is accessible.",
+    "harmonized-dataset-enabled": "Harmonized datasets section enabled",
+    "harmonized-dataset-enabled-help": "Harmonized datasets section is accessible.",
+    "import-studies-feature-enabled": "Import studies feature enabled",
+    "import-studies-feature-enabled-help": "Import studies feature is accessible.",
+    "signup-enabled": "Sign-up enabled",
+    "signup-enabled-help": "New users can sign-up.",
+    "signup-with-password": "Sign-up with password",
+    "signup-with-password-help": "Sign-up form with password, in which case the new user is automatically Active (without email validation).",
+    "signup-groups": "Sign-up groups",
+    "signup-groups-help": "Sign-up groups to automatically apply to new users.",
+    "signup-groups-form-help": "Space separated group names that will be to automatically apply to new users.",
+    "roles": "Membership Roles",
+    "roles-help": "A person can be member of a study or of a network with one of the listed roles. * Use the prefix <a href='#/admin/translations/edit?filter=contact.label.'>'contact.label.'</a> to change the translation.",
+    "add-role": "Add Role",
+    "delete-role-title": "Delete Role",
+    "delete-role-confirm": "This operation will remove members with this role from all documents, i.e. studies, networks. Are you sure you want to delete role \"{{role}}\"?",
+    "role-help": "Role unique identifier.",
+    "role-error": "Role identifier already exists.",
+    "role-character-error": "Role identifier contains invalid characters. Please avoid characters such as uppercase, spaces, '~' and '!'.",
+    "notifications": {
+      "title": "Notifications",
+      "info": "Notification emails can be sent to relevant users and groups.",
+      "study-title": "Study Updates",
+      "study-info": "Recipients of study updates notifications have at least <code>Editor</code> permission (when status is Draft) or <code>Reviewer</code> permission (when status is Deleted or Under Review).",
+      "study": "On study status changed notification",
+      "study-subject": "Subject of study status notification",
+      "study-help": "Send email notifications when study status changes to Deleted, to Under review or to Draft.",
+      "study-subject-help-long": "Email subject can contain the following placeholders: ${organization}, ${documentType}, ${documentId}, ${status}.",
+      "network-title": "Network Updates",
+      "network-info": "Recipients of network updates notifications have at least <code>Editor</code> permission (when status is Draft) or <code>Reviewer</code> permission (when status is Deleted or Under Review).",
+      "network": "On network status changed notification",
+      "network-subject": "Subject of network status notification",
+      "network-help": "Send email notifications when network status changes to Deleted, to Under review or to Draft.",
+      "network-subject-help-long": "Email subject can contain the following placeholders: ${organization}, ${documentType}, ${documentId}, ${status}.",
+      "collected-dataset-title": "Collected Dataset Updates",
+      "collected-dataset-info": "Recipients of collected dataset updates notifications have at least <code>Editor</code> permission (when status is Draft) or <code>Reviewer</code> permission (when status is Deleted or Under Review).",
+      "collected-dataset": "On collected dataset status changed notification",
+      "collected-dataset-subject": "Subject of collected dataset status notification",
+      "collected-dataset-help": "Send email notifications when collected dataset status changes to Deleted, to Under review or to Draft.",
+      "collected-dataset-subject-help-long": "Email subject can contain the following placeholders: ${organization}, ${documentType}, ${documentId}, ${status}.",
+      "harmonized-dataset-title": "Harmonized Dataset Updates",
+      "harmonized-dataset-info": "Recipients of harmonized dataset updates notifications have at least <code>Editor</code> permission (when status is Draft) or <code>Reviewer</code> permission (when status is Deleted or Under Review).",
+      "harmonized-dataset": "On harmonized dataset status changed notification",
+      "harmonized-dataset-subject": "Subject of harmonized dataset status notification",
+      "harmonized-dataset-help": "Send email notifications when harmonized dataset status changes to Deleted, to Under review or to Draft.",
+      "harmonized-dataset-subject-help-long": "Email subject can contain the following placeholders: ${organization}, ${documentType}, ${documentId}, ${status}.",
+      "file-title": "File Updates",
+      "file-info": "Recipients of file updates notifications have at least <code>Editor</code> permission (when status is Draft) or <code>Reviewer</code> permission (when status is Deleted or Under Review).",
+      "file": "On file status changed notification",
+      "file-subject": "Subject of file status notification",
+      "file-help": "Send email notifications when files status changes to Deleted, to Under review or to Draft.",
+      "file-subject-help-long": "Email subject can contain the following placeholders: ${organization}, ${documentType}, ${documentId}, ${status} and ${path} where document refers to the study (or network etc.) to which the file is attached.",
+      "comment-title": "Comment Updates",
+      "comment": "On comment notification",
+      "comment-info": "Recipients of comment updates notifications have at least <code>Reader</code> permission.",
+      "comment-subject": "Subject of comment notification",
+      "comment-help": "Send email notifications when a comment is added or updated.",
+      "comment-subject-help-long": "Email subject can contain the following placeholders: ${organization}, ${documentType}, ${documentId} and ${status} where document refers to the study (or network etc.) that was commented.",
+      "project-title": "Research Project Updates",
+      "project-info": "Recipients of research project updates notifications have at least <code>Editor</code> permission (when status is Draft) or <code>Reviewer</code> permission (when status is Deleted or Under Review).",
+      "project": "On research project status changed notification",
+      "project-subject": "Subject of research project status notification",
+      "project-help": "Send email notifications when research project status changes to Deleted, to Under review or to Draft.",
+      "project-subject-help-long": "Email subject can contain the following placeholders: ${organization}, ${documentType}, ${documentId}, ${status}."
+    },
+    "style": {
+      "title": "Style",
+      "info": "Override the default style with your own stylesheet. The CSS classes are the ones of <a target='_blank' href='http://getbootstrap.com/'>Bootstrap</a> (<a target='_blank' href='http://bootswatch.com/flatly/'>Bootswatch Flatly</a> theme)."
+    },
+    "translations": {
+      "title": "Translations",
+      "path": "Name",
+      "value": "Value",
+      "info": "Override the default translations or add new ones.",
+      "add": "Add Translation",
+      "add-entry": "Add Entry",
+      "new": {
+        "title": "New Translation Entry"
+      },
+      "import": {
+        "title": "Import Translations",
+        "label": "Import",
+        "help": "Use the JSON format to import custom translations."
+      },
+      "export-json": {
+        "label": "JSON (all languages)",
+        "help": "The custom translations will be exported in the JSON format."
+      },
+      "export-gettext": {
+        "label": "Gettext",
+        "help": "The complete translations will be exported in the Gettext format."
+      }
+    },
+    "searchLayout": {
+      "title": "Search Layout",
+      "help": "Switch the search page layout for Mica.",
+      "layout1": "Layout 1",
+      "layout2": "Layout 2",
+      "layout1-help": "Layout emphasizing a search bar that maps keywords to available taxonomies.",
+      "layout2-help": "Layout providing a search panel on the left-hand-side that displays the full taxonomy of various search categories (variable, study, and network)."
+    }
+  },
+  "publish": {
+    "label": "Publish",
+    "un-publish": "Unpublish",
+    "re-publish": "Republish",
+    "not-published": "Not published",
+    "published-out-of-date": "Published, out of date",
+    "published": "Published",
+    "publication": "Publication",
+    "publication-access": "Publication Access",
+    "published-ago-by": "Published {{publicationDate | amTimeAgo}} [{{publishedBy}}]",
+    "revisions-ahead": "Revisions ahead",
+    "status": {
+      "DRAFT": "Draft",
+      "UNDER_REVIEW": "Under Review",
+      "DELETED": "Deleted",
+      "draft": "To Draft",
+      "under-review": "To Under Review",
+      "deleted": "To Deleted"
+    }
+  },
+  "studies": "Studies",
+  "numberOfParticipants": {
+    "label": "Number of participants",
+    "participants": "Number of participants",
+    "sample": "Number of participants with biosamples",
+    "no-limit": "No Limit",
+    "suppl-info": "Supplementary information about number of participants"
+  },
+  "study": {
+    "input-placeholder": "Study name",
+    "add": "Add Study",
+    "add-population": "Add Population",
+    "edit-population": "Edit Population",
+    "add-dce": "Add Data Collection Event",
+    "edit-dce": "Edit Data Collection Event",
+    "label": "Study",
+    "label-edit": "Edit Study",
+    "details": "Study",
+    "definition": "Definition",
+    "general-info": "General Information",
+    "methods": "Methods",
+    "name": "Name",
+    "name-help": "Official study name.",
+    "acronym": "Acronym",
+    "acronym-help": "Acronym of the study.",
+    "objectives": "Objectives",
+    "description": "Description",
+    "objectives-help": "Main objectives of the study.",
+    "add-data-collection-event": "Add Data Collection Event",
+    "start-year": "Start Year",
+    "end-year": "End Year",
+    "general-design": "General Design",
+    "design": "Study Design",
+    "other-design": "Other design",
+    "follow-up": "Follow Up",
+    "follow-up-help": "General information on follow up (profile, frequency).",
+    "recruitment-target": "Recruitment Target",
+    "export": "CSV Export",
+    "import": {
+      "button": "Import Studies",
+      "label": "Import",
+      "individual-study-title": "Import Individual Studies",
+      "harmonization-study-title": "Import Harmonization Studies",
+      "sub-title": "Import studies from a remote Mica server.",
+      "sub-title-summary": "Select studies to import.",
+      "address": "Mica URL",
+      "address-help": "Mica address starts with http:// or https://",
+      "user": "Username",
+      "user-help": "Remote Mica username.",
+      "password": "Password",
+      "summary": "Please review the operation(s) that will be executed.",
+      "conflicts": "Conflicts (these studies will not be imported):",
+      "conflict": "Conflict",
+      "conflict-individual-study": "There is already an individual study with the same ID locally.",
+      "conflict-harmonization-study": "There is already a harmonization study with the same ID locally.",
+      "create-operations": "Studies to create:",
+      "update-operations": "Studies to replace:",
+      "operation": "Operation",
+      "operation-create": "Create",
+      "operation-replace": "Replace",
+      "finish": "Finish",
+      "close": "Close",
+      "cancel": "Cancel",
+      "previous": "< Previous",
+      "next": "Next >",
+      "changes" : "Replacements",
+      "confirmation" : "Confirmation*",
+      "confirmation-hint" : "To proceed, type the IDs of the studies that will be replaced.",
+      "host": "Host: ",
+      "local": "Local ",
+      "remove": "Remove from the list",
+      "status": "Status",
+      "action": "Action",
+      "saved": "Saved: ",
+      "form-section-diff": "has a different configuration.",
+      "form-section-equals": "has the same configuration.",
+      "form-section-equals-restrict": "has the same configuration, but a parent form section does not.",
+      "diff-hint-part-study": "Local study will be replaced",
+      "diff-hint-part-population": "Local populations that will be replaced: {{count}}",
+      "diff-hint-part-dce": "Local data collection events that will be replaced: {{count}}",
+      "diff-subtitle": "Comparison of configurations",
+      "diff-section": "Form Section",
+      "diff-template": "Same template?",
+      "diff-msg-part-1": "To proceed with the import, at least the ",
+      "diff-msg-part-2": " form section from the specified host needs to have the same configuration. If other form sections are different, the import can still occur, but these sections and their child sections will be ignored.",
+      "success": "The selected studies were submitted for import: ",
+      "status-ok": "Studies imported successfully.",
+      "problems" : {
+	      "problem-204": "The logo image can't be retrieved.",
+	      "problem-400": "The http address to retrieve the content is invalid.",
+	      "problem-401": "The user and/or password are invalid.",
+	      "problem-404": "The remote host was not found.",
+	      "problem-408": "Network is unreachable.",
+	      "problem-500": "Unexpected server error. Please see the log for more details.",
+	      "problem-503": "The remote host can't be reached."
+      }
+    },
+    "export": "Export CSV",
+    "access": {
+      "label": "Access",
+      "data": "data",
+      "biological_samples": "Biological samples",
+      "other": "Other",
+      "access_external_researchers_permitted_foreseen": {
+        "title": "Availability of data and biosamples"
+      },
+      "external_researchers_obtaining_study_data_bio_info": {
+        "title": "Availability of access information",
+        "access_info_location": {
+          "study_website": "On the study website",
+          "study_representative": "By contacting the study representative"
+        }
+      },
+      "access_permission_data": {
+        "public_sector": "Investigators from the public sector",
+        "private_sector": "Investigators from the private sector",
+        "not_for_profit_organization": "Investigators from not-for-profit organization",
+        "any-restrictions": "Add restrictions"
+      },
+      "access_permission_additional_info": {
+        "label": "Supplementary information about sector of research"
+      },
+      "access_data_can_leave": {
+        "study_facility": "Can leave the study facility",
+        "country": "Can leave the country"
+      },
+      "access_special_conditions_to_leave": {
+        "label": "Supplementary information about transfer"
+      },
+      "access_data_sharing_cost": {
+        "cost-title": "Cost",
+        "cost-reduction-title": "Cost reduction for co-analyses",
+        "no_cost" : "No Cost",
+        "fix_cost": "Fixed Cost",
+        "variable_cost": "Variable Cost",
+        "nyd": "Not yet defined",
+        "na": "Not Applicable"
+      },
+      "access_cost_reduction_consideration_specification": {
+        "title": "Supplementary information about cost reduction for co-analyses"
+      },
+      "access_cost_additional_information": {
+        "title": "Supplementary information about access fees"
+      },
+      "access_restrictions": {
+        "title":  "Restrictions",
+        "sector-of-research": {
+          "title": "Sector of research"
+        },
+        "transfer": {
+          "title": "Transfer"
+        }
+      },
+      "access_fees": {
+        "title": "Fees",
+        "any-fees": "Add fees"
+      },
+      "suppl-info": "Supplementary Information"
+    },
+    "marker-paper": "Marker Paper",
+    "pubmed-id": "Pubmed ID",
+    "documents": "Documents",
+    "documents-help": "If applicable, please provide relevant documentation about the study (e.g.: Study Protocol).",
+    "timeline": "Study Timeline",
+    "help-text-timeline": "Each colour in the timeline graph below represents a separate Study Population, while each segment in the graph represents a separate Data Collection Event. Clicking on a segment gives more detailed information on a Data Collection Event.",
+    "population": "Population",
+    "populations": "Populations",
+    "maelstromAuthorization": "Maelstrom authorization",
+    "specificAuthorization": "Specific authorization",
+    "authorization": {
+      "label": "Authorization",
+      "authorized": {
+        "true": "Authorized",
+        "false": "Not authorized"
+      },
+      "maelstrom": "Authorization from contributors to the Maelstrom catalogues",
+      "specific": "Authorization from contributors to the [specific network] catalogues",
+      "authorizer": "Authorizer",
+      "date": "Date"
+    },
+    "selection-criteria": {
+      "label": "Selection Criteria",
+      "criteria": "Criteria",
+      "gender": {
+        "label": "Gender",
+        "men": "Men",
+        "women": "Women"
+      },
+      "age": "Age",
+      "country": "Country",
+      "territory": "Territory",
+      "ethnic-origin": "Ethnic Origin",
+      "add-ethnic-origin": "Add Ethnic Origin",
+      "health-status": "Health Status",
+      "add-health-status": "Add Health Status",
+      "pregnant-women": "Pregnant women",
+      "newborn": "Newborns",
+      "twins": "Twins"
+    },
+    "recruitment-sources": {
+      "label": "Sources of Recruitment",
+      "general-population": "General Population",
+      "specific-population": "Specific Population",
+      "studies": "Participants from existing studies",
+      "add-study": "Add Study",
+      "other": "Other sources",
+      "other-specific-population": "Other specific population",
+      "info": "Supplementary Information"
+    },
+    "data-collection-event": "Data Collection Event",
+    "data-collection-events": "Data Collection Events",
+    "start": "Start",
+    "end": "End",
+    "save-error": "Error while saving study",
+    "publication": {
+      "not-published": "Not published",
+      "published-out-of-date": "Published, out of date",
+      "published": "Published",
+      "revisions-ahead": "Revisions ahead"
+    },
+    "opal": "Opal Server",
+    "opal-help": "URL of the opal server for this study (if different from the default one).",
+    "potential-conflicts": "Potential Conflicts",
+    "potential-conflicts-message": "There may be potential conflicts.",
+    "unpublish-conflicts": "Unpublish Conflict",
+    "unpublish-conflicts-message": "The study has dependent published datasets. Please unpublish these datasets and try again.",
+    "delete-conflict": "Delete Conflict",
+    "delete-conflict-message": "Found conflicts when trying to remove the study. Remove dependencies and try again.",
+    "population-delete-conflict-message": "Found conflicts when trying to remove a population. Remove dependencies and try again.",
+    "population-dce-delete-conflict-message": "Found conflicts when trying to remove a data collection event. Remove dependencies and try again.",
+    "population-or-dce-delete-conflict-message": "Found conflicts when trying to remove a population or a data collection event. Remove dependencies and try again.",
+    "revisions":  "Study Revisions",
+    "delete-dialog":{
+      "title": "Delete Study",
+      "message": "Are you sure to delete the study '{{arg0}}'?"
+    },
+    "restore-dialog": {
+      "title": "Restoring Study from Revision",
+      "message": "Are you sure you want to restore this revision from '{{arg0}}'?"
+    },
+    "none": "No studies."
+  },
+  "contact": {
+    "add": {
+      "contact": "Add contact",
+      "investigator": "Add investigator"
+    },
+    "list": {
+      "contact":"List of contacts",
+      "investigator":"List of investigators"
+    },
+    "label-plurial": {
+      "contact": "Contacts",
+      "investigator": "Investigators"
+    },
+    "label": {
+      "contact": "Contact",
+      "investigator": "Investigator"
+    },
+    "delete": {
+      "member": {
+        "title": "Delete {{type}}",
+        "confirm": "Are you sure you want to delete {{type}} {{name}}?"
+      }
+    },
+    "edit": {
+      "member": "Edit {{type}}"
+    },
+    "search": {
+      "member": "Find an existing {{type}}",
+      "placeholder": "Search by first name, last name or institution..."
+    },
+    "identification": "Identification",
+    "title": "Title",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "name": "Name",
+    "academicLevel": "Academic Level",
+    "email": "Email",
+    "phone": "Phone",
+    "dataAccessCommitteeMember": "Data Access Committee Member",
+    "institution": "Institution",
+    "department": "Department"
+  },
+  "address": {
+    "label": "Address",
+    "city": "City",
+    "zip": "Postal Code",
+    "state": "State",
+    "country": "Country"
+  },
+  "networks": "Networks",
+  "datasets": "Datasets",
+  "dataset": {
+    "name": "Name",
+    "acronym": "Acronym",
+    "add": "Add Dataset",
+    "details": "Dataset",
+    "label-edit": "Edit Dataset",
+    "general-info": "<h3>General Information</h3>",
+    "description": "Description",
+    "entity-type": "Entity Type",
+    "custom-order": "Chronological",
+    "study-population": {
+      "title": "Study Population",
+      "info": ""
+    },
+    "study-dce": {
+      "title": "Study Data Collection Event",
+      "info": ""
+    },
+    "datasource": {
+      "title": "Data Source",
+      "info": "Reference to the Opal table from which variables and data summaries will be extracted from."
+    },
+    "delete-dialog": {
+      "title": "Delete Dataset",
+      "message": "Are you sure you want to delete the dataset '{{arg0}}'?"
+    },
+    "options": "Options",
+    "network": {
+      "title": "Network",
+      "info": "A network linked to this dataset."
+    },
+    "harmonization-study": {
+      "title": "Harmonization Study",
+      "info": "A harmonization study linked to this dataset."
+    },
+    "harmonization-study-population": {
+      "title": "Harmonization Study Population",
+      "info": "A harmonization study's population linked to this dataset."
+    },
+    "study-table": {
+      "title": "Study Table",
+      "info": "A study table defines which study data collection event it applies to and which Opal table the variables and data summaries are to be extracted from."
+    },
+    "harmonization-study-table": {
+      "title": "Harmonization Study Table",
+      "info": "A harmonization study table defines which harmonization study population it applies to and which Opal table the variables and data summaries are to be extracted from."
+    },
+    "study-tables": {
+      "title": "Study Tables",
+      "info": "The study tables define implementations of the harmonized variables. The data summaries will be extracted from the corresponding Opal tables."
+    },
+    "harmonized-tables": {
+      "title": "Harmonized Tables",
+      "info": "The study tables define implementations of the harmonized variables by an individual study in the context of a population's data collection event or a harmonization study based on previously harmonized data. The data summaries will be extracted from the corresponding Opal tables."
+    },
+    "restore-dialog": {
+      "title": "Restoring Dataset from Revision",
+      "message": "Are you sure you want to restore this revision from '{{arg0}}'?"
+    },
+    "project": "Project",
+    "project-help": "Project name from the study's Opal server (if this one is defined, otherwise the project is expected to be found in Opal primary server).",
+    "project-dataschema-help": "Project name from the Opal primary server.",
+    "table": "Table",
+    "table-help": "Opal table name from which variables and data summaries will be extracted.",
+    "table-dataschema-help": "Project's table name from which variables will be extracted.",
+    "table-name": "Name",
+    "table-description": "Description",
+    "data-schema": {
+      "title": "Harmonized Dataset",
+      "info": "The variables of the harmonized dataset are the reference variables. This is a simple data dictionary: no data summaries will be extracted from the Opal table."
+    },
+    "index": "Index",
+    "add-study-table": "Add Study Table",
+    "none": "No datasets.",
+    "crosstab": {
+      "title": "Contingency Table",
+      "categorical": "Select a categorical variable...",
+      "another": "Select another variable...",
+      "query-help": "Displays the multivariate frequency distribution of selected variables.",
+      "privacy-check-failed": "To prevent disclosure risk, results in the table above are not shown because at least one cell has between 1 to {{arg0}} observations.",
+      "total-privacy-check-failed": "To prevent disclosure risk, results in the table above are not shown because at least one category has between 1 to {{arg0}} observations.",
+      "chi-squared": {
+        "test": "Chi-Squared Test"
+      }
+    },
+    "harmonization":{
+      "missing-attributes":"In harmonization table, these attributes are mandatory : project, table, studyId, populationId",
+      "study-not-published":"Before publishing a harmonized dataset, its linked harmonization study must already be published",
+      "population-not-published":"Before publishing a harmonized dataset, its linked population must already be published"
+    },
+    "collection":{
+      "study-not-published":"Before publishing a collected dataset, its linked individual study must already be published",
+      "population-not-published":"Before publishing a collected dataset, its linked population must already be published"
+    }
+  },
+  "attributes": "Attributes",
+  "attribute": {
+    "add-attribute": "Add Attribute",
+    "edit-attribute": "Edit Attribute"
+  },
+  "population": {
+    "label-edit": "Edit Population",
+    "id": "ID",
+    "name": "Name",
+    "info": "Supplementary Information",
+    "description": "Description",
+    "gender": "Gender",
+    "ageMin": "Minimum age",
+    "ageMax": "Maximum age",
+    "otherCriteria": "Other criteria",
+    "add-health-status-help": "Add Health Status",
+    "add-ethnic-origin-help": "Add Ethnic Origin",
+    "add-data-collection-event": "Add Data Collection Event",
+    "countries": "Countries ISO",
+    "numberOfParticipants-noLimit": "No limit",
+    "recruitment": "Recruitment",
+    "delete-dialog": {
+      "title": "Delete Population",
+      "message": "Are you sure to delete the population?"
+    }
+  },
+  "share-resource": {
+    "button-label": "Share",
+    "modal": {
+      "title": "Share Link to Draft",
+      "share-link-to-copy": "Link to Copy",
+      "share-link-help-text": "Shared link gives access to the latest draft version",
+      "expiration-date": "Expiration Date",
+      "expiration-date-help-text": "Shared link is permanently available when no expiration date is specified."
+    },
+    "error-no-portal-url": "Impossible to generate a share link. A Portal URL should be set in the section Administration/General."
+  },
+  "data-collection-event": {
+    "label-edit": "Edit Data Collection Event",
+    "id": "ID",
+    "name": "Name",
+    "description": "Description",
+    "start-year": "Start Year",
+    "start-month": "Start Month",
+    "end-year": "End Year",
+    "end-month": "End Month",
+    "data-sources": "Data sources",
+    "other-data-sources": "Other data sources",
+    "bio-samples": "Biosamples",
+    "other-bio-samples": "Other biosamples",
+    "admin-databases": "Administrative databases",
+    "tissue-types": "Tissue types",
+    "delete-dialog": {
+      "title": "Delete Data Collection Event",
+      "message": "Are you sure you want to delete the data collection event?"
+    }
+  },
+  "collected-datasets": "Collected Datasets",
+  "collected-dataset": "Collected Dataset",
+  "harmonized-datasets": "Harmonized Datasets",
+  "harmonized-dataset": "Harmonized Dataset",
+  "network": {
+    "name": "Name",
+    "logo": "Logo",
+    "acronym": "Acronym",
+    "add": "Add Network",
+    "label-edit": "Edit Network",
+    "general-info": "<h3>General Information</h3>",
+    "description": "Description",
+    "index": "Index",
+    "label": "Network",
+    "add-study": "Add Study",
+    "contacts": "Contacts",
+    "associated-people": "Affiliated Members",
+    "delete-dialog": {
+      "title": "Delete Network",
+      "message": "Are you sure you want to delete the network '{{arg0}}'?"
+    },
+    "study-delete-dialog": {
+      "title": "Delete Study",
+      "message": "Are you sure you want to delete the study '{{arg0}}'?"
+    },
+    "network-delete-dialog": {
+      "title": "Delete Network",
+      "message": "Are you sure you want to delete the network '{{arg0}}'?"
+    },
+    "restore-dialog": {
+      "title": "Restoring Network from Revision",
+      "message": "Are you sure you want to restore this revision from '{{arg0}}'?"
+    },
+    "none": "No networks.",
+    "number-of-studies": "Number of Studies"
+  },
+  "all": "All",
+  "name": "Name",
+  "acronym": "Acronym",
+  "relevance": "Relevance",
+  "id": "ID",
+  "size": "Size",
+  "value": "Value",
+  "values": "Values",
+  "details": "Details",
+  "namespace": "Namespace",
+  "documents": "Documents",
+  "edit": "Edit",
+  "clone": "Clone",
+  "start-date": "Start Date",
+  "view": "View",
+  "delete": "Delete",
+  "cancel": "Cancel",
+  "ok": "OK",
+  "confirmation": "Confirmation",
+  "submit": "Submit",
+  "review": "Review",
+  "conditionallyApprove": "Conditionally Approve",
+  "reopen": "Reopen",
+  "approve": "Approve",
+  "reject": "Reject",
+  "close": "Close",
+  "clear": "Clear",
+  "today": "Today",
+  "save": "Save",
+  "validate": "Validate",
+  "download": "Download",
+  "report": "Report",
+  "upload": "Upload",
+  "apply": "Apply",
+  "on": "On",
+  "by": "By",
+  "created-by": "Created by",
+  "created-on": "Created on",
+  "last-modified": "Last Modified",
+  "other": "Other",
+  "notification": "Notification",
+  "required": "Required",
+  "pattern": "Expected pattern is",
+  "suppl-info": "Supplementary Information",
+  "fix-error": "Please fix errors below",
+  "dnd-reorder": "Drag and drop to reorder",
+  "loading": "Loading...",
+  "error": "Error",
+  "actions": "Actions",
+  "authorizer": "Authorizer",
+  "logo": "Logo",
+  "attachments": "Attachments",
+  "no-attachments": "No attachments.",
+  "missing-files": "Files missing.",
+  "min-items": "Minimum required items is '{{arg0}}'.",
+  "allowed-file-types": "Allowed file types:",
+  "file-system": "File System",
+  "places": "Places",
+  "homes": "Homes",
+  "home": "Home",
+  "total": "Total",
+  "type": "Type",
+  "fullscreen": "Switch to fullscreen mode",
+  "exit-fullscreen": "Exit from fullscreen mode",
+  "status": "Status",
+  "changed-by": "Changed By",
+  "changed-on": "Changed On",
+  "OPENED": "Opened",
+  "SUBMITTED": "Submitted",
+  "REVIEWED": "Under Review",
+  "CONDITIONALLY_APPROVED": "Conditionally Approved",
+  "APPROVED": "Approved",
+  "REJECTED": "Rejected",
+  "APPROVED-REJECTED": "Approved or Rejected",
+  "date": "Date",
+  "author": "Author",
+  "user": "User",
+  "users": "Users",
+  "website": "Website",
+  "funding": "Funding",
+  "members": "Members",
+  "unsaved-title": "Unsaved Changes",
+  "unsaved-prompt": "Are you sure you want to leave this page? Unsaved changes will be lost.",
+  "analysis": {
+    "action": "Analysis",
+    "all-criteria": "All criteria",
+    "criteria": "Criteria",
+    "count": "#",
+    "all": "All",
+    "all-help": "With or without value",
+    "exists": "Exists",
+    "exists-help": "With value",
+    "empty": "Empty",
+    "empty-help": "Without value",
+    "in": "In",
+    "in-help": "With value in...",
+    "out": "Not in",
+    "out-help": "With value not in...",
+    "min": "Min",
+    "max": "Max",
+    "range": "Range",
+    "values": "Values",
+    "value": "Value",
+    "values-title": "Values (space separated)",
+    "from": "From",
+    "to": "To",
+    "date-title": "Date",
+    "entities-count": {
+      "title": "Entities Count",
+      "help": "Given a list of variables, the entities matching all the criteria for these variables can be counted.",
+      "action": "Count entities",
+      "no-query": "To count entities you need to select some variables first and then apply criteria on their values."
+    }
+  },
+  "table-selections": {
+    "all-page-selected": "All items of this page are selected.",
+    "all-selected": "All items are selected.",
+    "select-all": "Select all items",
+    "unselect-all": "Unselect all items"
+  },
+  "sets": {
+    "empty": "No list",
+    "maximum-number-attained": "Your limit of {{arg0}} <a href='{{arg1}}' target='_self'><strong><u>lists</u></strong></a> have been attained.",
+    "cart": {
+      "title": "Cart",
+      "help": "Use the cart to make a list of variables. This list can be analyzed or can be viewed in the search page.",
+      "no-variables": "The cart of variables is empty.",
+      "no-variable-added": "No variable has been added to the cart.",
+      "variables-added": "<a href='{{arg0}}' target='_self'><u>{{arg1}} new variable(s) were added to the cart.</u></a>",
+      "variable-added": "<a href='{{arg0}}' target='_self'><u>Variable added to the cart.</u></a>",
+      "add-to-cart": "Add to Cart",
+      "no-variable-removed": "No variable was removed from the cart.",
+      "variable-removed": "<a href='{{arg0}}' target='_self'><u>Variable removed from the cart.</u></a>",
+      "remove-from-cart": "Remove from Cart"
+    },
+    "set": {
+      "title": "Lists",
+      "help": "Make one or more lists. Each list can be analyzed or can be viewed in the search page.",
+      "no-variable-added": "No variable has been added to the {{arg0}} list.",
+      "variables-added": "<a href='{{arg0}}?id={{arg1}}' target='_self'><u>{{arg2}} variable(s) were added to list {{arg3}}.</u></a>"
+    },
+    "opal-views-download-button-text": "Opal Views",
+    "opal-views-download-button-help": "Download opal views representation of this list.",
+    "add": {
+      "button": {
+        "cart-label": "Add to Cart",
+        "set-label": "Add to List"
+      },
+      "modal": {
+        "title": "Save to List",
+        "sub-title": "Name",
+        "create-new": "Create a new list",
+        "to-existing": "Add to an existing list"
+      }
+    },
+    "delete-dialog": {
+      "title": "Delete Selected Lists",
+      "message": "Are you sure you want to delete the selected lists."
+    }
+  },
+  "search": {
+    "title": "Search",
+    "help": "Search in the published repository.",
+    "back": "Back to Search",
+    "no-results": "No result found.",
+    "no-graphic-result": "No graphics for current query.",
+    "error": "Impossible to search for now. Please try again later.",
+    "no-description": "No description.",
+    "query": "Query",
+    "query-copy-help": "Use the query in R or Python commands.",
+    "placeholder": {
+      "all": "e.g. alcohol, cancer, gender, cohort, twin",
+      "variable": "e.g. alcohol, pregnancy, cancer",
+      "dataset": "Search by dataset name or type",
+      "study": "e.g. cohort, gender, twin",
+      "network": "Search by network name",
+      "vocabulary-filter": "Filter",
+      "meta-taxonomy-filter": {
+        "variables": "Search",
+        "datasets": "Search",
+        "studies": "Search",
+        "networks": "Search"
+      }
+    },
+    "left-panel-open-title": "Open Panel",
+    "left-panel-close-title": "Close Panel",
+    "enter-fullscreen-title": "Fullscreen",
+    "exit-fullscreen-title": "Exit Fullscreen",
+    "left-panel-close-tooltip": "Close left panel",
+    "left-panel-open-tooltip": "Open left panel",
+    "classifications-show": "Show detailed classifications",
+    "list": "List",
+    "list-help": "",
+    "coverage": "Coverage",
+    "coverage-help": "",
+    "graphics": "Graphics",
+    "graphics-help": "",
+    "any": "any",
+    "any-help": "Any value",
+    "none": "none",
+    "none-help": "Missing value",
+    "in": "in",
+    "out": "not in",
+    "in-help": "Value is in at least one of the selected terms",
+    "contains": "contains",
+    "contains-help": "Value contains all the selected terms",
+    "advanced": "Advanced",
+    "advanced-help": "Show logical operators",
+    "advanced-button": "Advanced Search",
+    "basic": "Basic",
+    "basic-help": "Hide logical operators",
+    "coverage-end-date-ongoing": "Ongoing",
+    "coverage-with-zeros": "All Subdomains",
+    "coverage-without-zeros": "Subdomains with Variables",
+    "no-coverage": "Select some variable search criteria to see their corresponding coverage.",
+    "coverage-dce-cols": {
+      "study": "Study",
+      "population": "Population",
+      "dce": "DCE"
+    },
+    "coverage-hide-missing": "Hide missing",
+    "coverage-show-missing": "Show missing",
+    "coverage-group-by": "Group by",
+    "coverage-buckets": {
+      "datasetNav": "Dataset",
+      "study" : "Study",
+      "study-individual": "Individual Study",
+      "study-harmonization": "Harmonization Study",
+      "dce" : "Population/Data Collection Event (DCE)",
+      "dce-individual" : "Data Collection Event (DCE)",
+      "dce-harmonization" : "Population",
+      "network" : "Network",
+      "dataschema": "Harmonized Dataset",
+      "dataset": "Dataset",
+      "dataset-collected": "Collected ",
+      "dataset-harmonized": "Harmonized",
+      "collection": "Individual",
+      "individual": "Individual",
+      "harmonization": "Harmonization"
+    },
+    "coverage-select": {
+      "all": "All",
+      "none": "None",
+      "full": "Full coverage"
+    },
+    "study": {
+      "facet-label": "Study",
+      "label": "Study",
+      "population-name": "Population",
+      "dce-name": "DCE",
+      "noResults": "No study found",
+      "dataSources": "Data sources available",
+      "quest": "Quest",
+      "pm": "PM",
+      "bio": "Bio",
+      "others": "Others",
+      "design": "Study design",
+      "participants": "Participants",
+      "other-design": "Other design",
+      "individual": "Individual",
+      "harmonization": "Harmonization"
+    },
+    "dataset": {
+      "facet-label": "Dataset",
+      "label": "Dataset",
+      "noResults": "No dataset found",
+      "collected": "Collected",
+      "harmonized": "Harmonized"
+    },
+    "variable": {
+      "facet-label": "Variable",
+      "label": "Label",
+      "noResults": "No variable found",
+      "collected": "Collected",
+      "dataschema": "Harmonized"
+    },
+    "network": {
+      "label": "Network",
+      "facet-label": "Network",
+      "noResults": "No network found"
+    },
+    "harmonization": "Harmonization",
+    "network-where": "Networks where...",
+    "study-where": "Studies where...",
+    "dataset-where": "Datasets where...",
+    "variable-where": "Variables where...",
+    "match":{
+      "placeholder": "Enter text to search..."
+    },
+    "filter": "Filter",
+    "apply-selections": "Filter Selections",
+    "close-and-search": "Close and search",
+    "criterion": {
+      "created": "Criteria <strong>{{arg0}} ({{arg1}})</strong> was added.",
+      "updated": "Criteria <strong>{{arg0}} ({{arg1}})</strong> was updated."
+    },
+    "taxonomy-nav-help": "",
+    "vocabulary-nav-help": "",
+    "classifications-link": "",
+    "classifications-title": "",
+    "faceted-navigation-help": "Select an entry from the menu on the left to start browsing in the repository.",
+    "facet": {
+      "more": "More",
+      "less": "Less",
+      "no-data": "No data matching this query."
+    },
+    "refresh-taxonomies": "Refresh Taxonomies",
+    "showing": "Showing {{arg0}} / {{arg1}}",
+    "search-not-available": "Searching is unavailable for the current document section configuration."
+  },
+  "variables": "Variables",
+  "classifications": {
+    "title": "Classifications",
+    "help": "Navigate the classification system and select the search criteria."
+  },
+  "all-null-classifications": "",
+  "all-variable-classifications": "All variable classifications",
+  "all-dataset-classifications": "All dataset classifications",
+  "all-study-classifications": "All study classifications",
+  "all-network-classifications": "All network classifications",
+  "no-classifications": "No classifications found",
+  "variable-classifications": "Variables Classification",
+  "dataset-classifications": "Dataset classifications",
+  "study-classifications": "Study classifications",
+  "network-classifications": "Network classifications",
+  "add-query": "Add to query",
+  "permissions": "Permissions",
+  "permission": {
+    "help": "Grant permission to <code>Read</code>, <code>Edit</code> or <code>Review</code> the current draft.",
+    "help-global": "Grant permission to <code>Read</code>, <code>Edit</code> or <code>Review</code> any draft.",
+    "none": "No permissions.",
+    "label": "permission",
+    "principal": "Name",
+    "principal-help": "User or group unique name.",
+    "anyone": "Anyone",
+    "any-group": "Any group",
+    "add": "Add Permission",
+    "edit-user": "Edit User Permission",
+    "edit-group": "Edit Group Permission",
+    "user": "User",
+    "group": "Group",
+    "reader": "Reader",
+    "reader-help": "Read-only access to the document in draft mode with its revisions and its associated files.",
+    "reader-config-help": "Read-only access to the {{arg0}} with their revisions and their associated files.",
+    "editor": "Editor",
+    "editor-help": "Edit access to the document in draft mode with its revisions and its associated files. Publication or permanent deletion are not permitted.",
+    "reviewer": "Reviewer",
+    "reviewer-help": "Full access to the document, including its publication, permanent deletion and permissions.",
+    "file-permission": "Apply same permission to all associated files",
+    "file-access": "Apply Read access to all associated files",
+    "delete-dialog": {
+      "title": "Delete Permission",
+      "message": "Are you sure you want to delete the permission of {{arg0}} {{arg1}}"
+    },
+    "draft": "Draft Permission",
+    "error": {
+      "reserved-groups": "Group name cannot be any of the following reserved groups: {{arg0}}."
+    }
+  },
+  "access": {
+    "help": "Grant <code>Read</code> access to the current publication.",
+    "help-global": "Grant <code>Read</code> access to any publication.",
+    "none": "No accesses.",
+    "add": "Add Access",
+    "principal-help": "User or group unique name. Use wildcard * for specifying anyone or any group.",
+    "delete-dialog": {
+      "title": "Delete Access",
+      "message": "Are you sure you want to delete the access of {{arg0}} {{arg1}}"
+    }
+  },
+  "draft": "Draft",
+  "published": "Published",
+  "role": "Role",
+  "roles": "Roles",
+  "files": "Files",
+  "items": "items",
+  "item": "item",
+  "select-all": "Select all",
+  "clear-selection": "Clear",
+  "select-items": "Select",
+  "items-selected": "items selected",
+  "item-selected": "item selected",
+  "files-selected": "files selected",
+  "file-selected": "file selected",
+  "form": "Form",
+  "settings": "Settings",
+  "other-settings": "Other settings",
+  "revisions": "Revisions",
+  "revision": "Revision",
+  "revision-date": "Revision Date",
+  "comment-label": "Comment",
+  "restore": "Restore",
+  "history": "History",
+  "new-folder": "New Folder",
+  "new-network": "New Network",
+  "new-study": "New Study",
+  "new-collected-dataset": "New Collected Dataset",
+  "new-harmonized-dataset": "New Harmonized Dataset",
+  "new-data-access-request": "New Data Access Request",
+  "new-project": "New Research Project",
+  "title": "Title",
+  "description": "Description",
+  "help": "Help",
+  "general": "General",
+  "configuration": "Configuration",
+  "security": "Security",
+  "system": "System",
+  "content": "Content",
+  "data-management": "Data Management",
+  "data-access": "Data Access",
+  "research": "Research",
+  "properties": "Properties",
+  "searching": "Searching",
+  "search-results": "Search results",
+  "most-recent": "Most Recent",
+  "not-published": "Not Published",
+  "path": "Path",
+  "view-files": "View files",
+  "empty-folder": "Empty folder",
+  "search-tooltip": {
+    "recursively": "Search recursively",
+    "clear": "Clear search",
+    "under-review": "Search files under review",
+    "deleted": "Search deleted files",
+    "most-recent": "Search 10 most recently modified files",
+    "not-published": "Search not published files"
+  },
+  "admin-page": {
+    "help": {
+      "general": "Configure Opal server, locale and server properties.",
+      "notifications": "Notification emails can be sent to relevant users and groups.",
+      "style": "Override the default style with your own stylesheet.",
+      "security": "Configure encryption and Opal server credentials.",
+      "metrics": "View JVM and HTTP metrics.",
+      "logs": "Configure server logs.",
+      "caching": "Manage server caches.",
+      "indexing": "Manage server indices.",
+      "network-config": "Configure Network form, permissions and search.",
+      "individual-study-config": "Configure Study form, permissions and search.",
+      "harmonization-study-config": "Configure Harmonization Study form, permissions and search.",
+      "collected-dataset-config": "Configure Collected Dataset form, permissions and search.",
+      "harmonized-dataset-config": "Configure Harmonized Dataset form, permissions and search.",
+      "data-access-config": "Configure Data Access Request form.",
+      "project-config": "Configure Research Project form.",
+      "file-system": "Manage file system.",
+      "search": "Search in the published repository.",
+      "classifications": "Browse taxonomies.",
+      "translations": "Manage labels translations.",
+      "cart": "Cart of variables.",
+      "sets": "Lists of variables.",
+      "persons": "Manage persons who are associated to studies and/or networks by a role such as Contact or Investigator."
+    }
+  },
+  "server": {
+    "error": {
+      "file": {
+        "upload": "Failed to upload '{{arg0}}', please contact your administrator for more help."
+      },
+      "crosstab": {
+        "no-data": "No data available."
+      },
+      "search": {
+        "failed": "Search failed, please revise your query and try again.",
+        "timeout": "Too many search in progress, please retry later."
+      },
+      "403": "Unauthorized access.",
+      "409": {
+        "network": {
+          "delete-conflict": "Conflict deleting network",
+          "delete-conflict-message": "Found conflicts when trying to delete network. Remove all references from the following networks: {{arg0}}."
+        }
+      },
+      "taxonomy": {
+        "name-not-found": "The taxonomy with the name '{{arg0}}' is not found.",
+        "range-criterion-missing-terms": "The criterion '{{arg0}}' must have terms to define its range intervals.",
+        "range-criterion-missing-range-attribute": "The criterion '{{arg0}}' with terms must be marked as having range intervals.",
+        "duplicate-criterion-alias": "The field '{{arg0}}' already has an associated criterion. Only a numerical field can have two criteria, a discrete and a range criterion."
+      },
+      "data-access-amendment": {
+        "not-enabled": "Data Access Amendment operations are disabled, contact your administrator to enable this functionality."
+      }
+    }
+  },
+  "file": {
+    "upload": {
+      "button": "Choose file",
+      "message": "No file chosen",
+      "date": "Upload Date"
+    },
+    "invalid-paste": "You can not paste in the same path.",
+    "search-results": {
+      "current": "Search results in current folder",
+      "current-sub": "Search results in current folder and sub-folders"
+    },
+    "show-details": "Show details"
+  },
+  "data-access-amendments": "Amendments",
+  "data-access-amendment": {
+    "title": "Amendment",
+    "none": "No amendment requested.",
+    "add": "Add Amendment",
+    "cannot-add": "You do not have the permission to add an amendment.",
+    "edit": "Edit Amendment",
+    "delete-dialog": {
+      "title": "Delete Amendment",
+      "message": "Are you sure you want to delete amendment '{{arg0}}' requested by '{{arg1}}'?"
+    },
+    "submit": {
+      "invalid": "The amendment cannot be submitted because of an incomplete application form."
+    },
+    "status-change-confirmation": {
+      "title": "Status Change Confirmation",
+      "message": "Are you sure you want to {{arg0}} this amendment?",
+      "message-review": "Are you sure you want to put this amendment under review?"
+    },
+    "default": {
+      "form-title": "Data Access Request Update",
+      "modification-nature-title": "Nature of modifications",
+      "other-modifications": "Other Modifications",
+      "name": "Name",
+      "title": "Title",
+      "position": "Position",
+      "email": "Email",
+      "institution": "Institution",
+      "institution-email": "Institutional Email",
+      "email-alt": "Alternate Email",
+      "phone": "Telephone Number",
+      "address": "Mailing Address",
+      "date-error": "Not a valid date",
+      "I": {
+        "title": "Modifications on Contact and Research Project Information",
+        "A": {
+          "title": "Modifications on Name, institution, and contact details of the Applicant (Principal Applicant)",
+          "info": "Please ensure that a full postal address and a valid institutional e-mail address are included. In case of more than one affiliation, applicants are asked to only provide their contact information pertaining to the institution they are affiliated with for the purpose of this research project."
+        },
+        "B": {
+          "title": "Modifications on Name, institution, and contact details of the authorized institutional representative",
+          "info": "Please include a full postal address and a valid institutional e-mail address."
+        },
+        "C": {
+          "title": "Modifications on Title of the Research Project",
+          "info": "",
+          "website": "Project website",
+          "website-help": "If available, please provide the address of the research project website as well."
+        },
+        "D": {
+          "title": "Adding names of authorized personnel (within your institution)",
+          "info": "Please provide the names of all investigators, collaborators, data managers and research staff that will have access to the research data in order to work on the research project. A valid institutional e-mail address for each name along with their job title and function is also required.",
+          "check": "No personnel will require access to the research data."
+        },
+        "E": {
+          "title": "Adding names of authorized students (within your institution)",
+          "info": "Please provide the names of all students who will have access to the research data in order to work on the project. A valid e-mail address for each name is required. Students at other institutions should not be included in this list.",
+          "check": "No students will require access to the research data."
+        },
+        "F": {
+          "title": "Modifications on Research Project (scientific abstract)",
+          "info": "Please provide a clear scientific description of the research project, its specific aims, methodology and deliverables and how it meets our objectives, in <strong>no more than 500 words</strong>. Also, please ensure to clearly explain how our research data will be used in the research project."
+        },
+        "G": {
+          "title": "Modifications on Lay summary of the project",
+          "info": "Please provide a short, accessible description of the project for the general public in <strong>no more than 200 words</strong>. Scientific jargon should be avoided to a reasonable extent. This description will be made available on the consortium public access registry and may be used in a variety of communications materials produced by the consortium (e.g. brochures, reports to stakeholders, press releases, blogs etc.)."
+        },
+        "H": {
+          "title": "Modification of the End date of the project",
+          "info": "Expected end date of the project. A final report may be requested at that date."
+        }
+      },
+      "documents": {
+        "title": "Modifications on Documents",
+        "reb-research-protocol": "Research Ethics Board approved research protocol",
+        "reb-decision-letter": "Decision letter from a Research Ethics Board",
+        "cv": "2-Page CV of the Principal Applicant",
+        "peer-review": "Proof of scientific peer-review, if available",
+        "other": "Other documents"
+      },
+      "signature": {
+        "title": "Signature",
+        "check": "I have completed all mandatory fields, included all necessary documents, and hereby submit this application."
+      }
+    }
+  },
+  "data-access-feasibility": {
+    "default": {
+      "form-title": "Feasibility Inquiry",
+      "grant-submission": {
+        "title": "Grant Submission Details",
+        "check": "This feasibility form is for a grant submission?"
+      },
+      "granting-agency": "Name of granting agency",
+      "grant-competition": "Name of grant competition",
+      "grant-date": "Grant due date",
+      "applicant-info": {
+        "title": "Applicant Information"
+      },
+      "pi": "Principal Investigator",
+      "career": {
+        "title": "Career",
+        "inv-early": "Independent Investigator - Early Career (0 - 5 years)",
+        "inv-mid": "Independent Investigator - Mid Career (5 - 15 years)",
+        "inv-senior": "Independent Investigator - Senior (15+ years)",
+        "student": "Graduate Student",
+        "postdoc": "Postdoc Fellow",
+        "other": "Other",
+        "other-career": "Other Career"
+      },
+      "current-position": "Current Position",
+      "pi-email": "PI Email Address",
+      "pi-phone": "PI Phone Number",
+      "pi-address": "PI Mailing Address",
+      "project-info": {
+        "title": "Project Overview"
+      },
+      "project-title": "Title of project",
+      "project-objectives": "Project background and objectives",
+      "data": {
+        "title": "Data Sought"
+      },
+      "datasets":  "Specify dataset(s) and type of data",
+      "selection-criteria": "Selection criteria for participants on whom data is sought",
+      "study-design": "Proposed study design and statistical methods for analyzing data",
+      "biospecimens": {
+        "title": "Biospecimens Sought",
+        "check": "This feasibility form includes access to biospecimens?"
+      },
+      "biospecimens-type": "Specify type, number, and volume",
+      "biospecimens-selection-criteria": "Selection criteria for participants on whom biospecimens are sought",
+      "biospecimens-pre-analytical-characteristics": "Biospecimens pre-analytical characteristics required, if applicable",
+      "biospecimens-analyze-methods": "Proposed methods for analyzing biospecimens",
+      "linkage": {
+        "title": "Linkage of Participants with Other Datasets"
+      },
+      "data-linkage": "Data to be linked (specify dataset(s), type of data, and their source), if applicable"
+    }
+  },
+  "data-access-requests": "Data Access Requests",
+  "data-access-request": {
+    "applicant": "Applicant",
+    "title": "Data Access Request",
+    "title-help": "Short summary to help identifying the request.",
+    "status": "Status",
+    "lastUpdate": "Last Update",
+    "submissionDate": "Submission Date",
+    "none": "No data access requested.",
+    "add": "Add Data Access Request",
+    "edit": "Edit Data Access Request",
+    "form": "Application Form",
+    "documents": "Additional Documents",
+    "documents-help": "Select one or more documents to be attached to the data access request.",
+    "no-documents": "No documents.",
+    "add-documents": "Add files",
+    "edit-documents": "Add/Remove Files",
+    "select-status": "Select a Status",
+    "comments": "Comments",
+    "private-comments": "Private Comments",
+    "history": "History",
+    "status-placeholder": "Filter by status",
+    "pending-amendments": "Pending Amendments",
+    "total-amendments": "Total Amendments",
+    "start-date-help": "The date at which the project will start can be modified, the intermediate report dates will be updated accordingly.",
+    "start": "Start",
+    "start-label": "S",
+    "intermediate": "Annual report",
+    "end": "Final report",
+    "end-label": "F",
+    "histories": {
+      "opened":   "Opened",
+      "submitted": "Submitted",
+      "reopened":  "Re-opened",
+      "reviewed":  "Reviewed",
+      "approved":  "Approved",
+      "rejected":  "Rejected",
+      "conditionallyApproved": "Conditionally approved"
+    },
+    "action-log": {
+      "title": "Action",
+      "required": "Both inputs must be filled before submitting",
+      "action-placeholder": "Enter text",
+      "delete": {
+        "title": "Delete Action Log Item",
+        "message": "Are you sure you want to delete action '{{action}}' made by '{{author}}' on '{{changedOn}}'?"
+      },
+      "edit": {
+        "title": "Edit Action Log Item"
+      }
+    },
+    "delete-dialog": {
+      "title": "Delete Data Access Request",
+      "message": "Are you sure you want to delete Data Access '{{arg0}}' requested by '{{arg1}}'?"
+    },
+    "submit": {
+      "invalid": "The request cannot be submitted because of an incomplete application form."
+    },
+    "validation": {
+      "title-success": "Valid Form",
+      "title-error": "Invalid Form",
+      "success": "Your form is complete and ready to be submitted.",
+      "error": "Your form is incomplete, please correct the errors."
+    },
+    "status-change-confirmation": {
+      "title": "Status Change Confirmation",
+      "message": "Are you sure you want to {{arg0}} this access request?",
+      "message-review": "Are you sure you want to put this access request under review?"
+    },
+    "submit-confirmation": {
+      "title": "Form Submitted",
+      "message": "Your form was successfully submitted."
+    },
+    "profile" :{
+      "title" : "User Profile",
+      "name" : "Name",
+      "send-email" : "Send an email",
+      "email" : "E-mail"
+    },
+    "parse-error": "Form content is not a valid document, please contact your administrator for more help.",
+    "default": {
+      "name": "Name",
+      "title": "Title",
+      "position": "Position",
+      "email": "Email",
+      "institution": "Institution",
+      "institution-email": "Institutional Email",
+      "email-alt": "Alternate Email",
+      "phone": "Telephone Number",
+      "address": "Mailing Address",
+      "date-error": "Not a valid date",
+      "I": {
+        "title": "Contact and Research Project Information",
+        "A": {
+          "title": "Name, institution, and contact details of the Applicant (Principal Applicant)",
+          "info": "Please ensure that a full postal address and a valid institutional e-mail address are included. In case of more than one affiliation, applicants are asked to only provide their contact information pertaining to the institution they are affiliated with for the purpose of this research project."
+        },
+        "B": {
+          "title": "Name, institution, and contact details of the authorized institutional representative",
+          "info": "Please include a full postal address and a valid institutional e-mail address."
+        },
+        "C": {
+          "title": "Title of the Research Project",
+          "info": "",
+          "website": "Project website",
+          "website-help": "If available, please provide the address of the research project website as well."
+        },
+        "D": {
+          "title": "Names of authorized personnel (within your institution)",
+          "info": "Please provide the names of all investigators, collaborators, data managers and research staff that will have access to the research data in order to work on the research project. A valid institutional e-mail address for each name along with their job title and function is also required.",
+          "check": "No personnel will require access to the research data."
+        },
+        "E": {
+          "title": "Names of authorized students (within your institution)",
+          "info": "Please provide the names of all students who will have access to the research data in order to work on the project. A valid e-mail address for each name is required. Students at other institutions should not be included in this list.",
+          "check": "No students will require access to the research data."
+        },
+        "F": {
+          "title": "Research Project (scientific abstract)",
+          "info": "Please provide a clear scientific description of the research project, its specific aims, methodology and deliverables and how it meets our objectives, in <strong>no more than 500 words</strong>. Also, please ensure to clearly explain how our research data will be used in the research project."
+        },
+        "G": {
+          "title": "Lay summary of the project",
+          "info": "Please provide a short, accessible description of the project for the general public in <strong>no more than 200 words</strong>. Scientific jargon should be avoided to a reasonable extent. This description will be made available on the consortium public access registry and may be used in a variety of communications materials produced by the consortium (e.g. brochures, reports to stakeholders, press releases, blogs etc.)."
+        },
+        "H": {
+          "title": "End date of the project",
+          "info": "Expected end date of the project. A final report may be requested at that date."
+        }
+      },
+      "documents": {
+        "title": "Documents",
+        "reb-research-protocol": "Research Ethics Board approved research protocol",
+        "reb-decision-letter": "Decision letter from a Research Ethics Board",
+        "cv": "2-Page CV of the Principal Applicant",
+        "peer-review": "Proof of scientific peer-review, if available",
+        "other": "Other documents"
+      },
+      "signature": {
+        "title": "Signature",
+        "check": "I have completed all mandatory fields, included all necessary documents, and hereby submit this application."
+      }
+    }
+  },
+  "network-config" : {
+    "title" : "Network Configuration",
+    "schema-form": {
+      "title": "Form",
+      "info": "The custom network form can be specified both in terms of data structure (schema) and data display and validation (definition). See <a href='https://github.com/Textalk/angular-schema-form/blob/master/docs/index.md' target='_blank'>form schema documentation</a> for more details."
+    }
+  },
+  "harmonization-study-config" : {
+    "title" : "Harmonization Study Configuration",
+    "schema-form": {
+      "title": "Form",
+      "info": "The custom harmonization study form can be specified both in terms of data structure (schema) and data display and validation (definition). See <a href='https://github.com/Textalk/angular-schema-form/blob/master/docs/index.md' target='_blank'>form schema documentation</a> for more details."
+    },
+    "harmonization-study-form-title": "Harmonization Study",
+    "harmonization-population-form-title": "Harmonization Population"
+  },
+  "individual-study-config" : {
+    "title" : "Individual Study Configuration",
+    "schema-form": {
+      "title": "Form",
+      "info": "The custom study form can be specified both in terms of data structure (schema) and data display and validation (definition). See <a href='https://github.com/Textalk/angular-schema-form/blob/master/docs/index.md' target='_blank'>form schema documentation</a> for more details."
+    },
+    "individual-study-form-title": "Study",
+    "population-form-title": "Population",
+    "data-collection-event-form-title": "Data Collection Event"
+  },
+  "taxonomy-config": {
+    "title": "Search",
+    "info": "The search criteria can be configured in accordance with the model.",
+    "terms": {
+      "info": "The terms describe the possible values of the criterion. In the case of a numerical type (integer or decimal), the terms represent some ranges of values."
+    },
+    "criterion-dialog":{
+      "add-criterion": "Add Criterion",
+      "edit-criterion": "Edit Criterion",
+      "name-help": "Unique name identifying this search criterion.",
+      "repeatable-help": "Search for exact match or contained value.",
+      "facet": "Facet",
+      "facet-help": "A facet criterion is exposed in the faceted list page.",
+      "facet-position": "Facet Position",
+      "facet-position-help": "Number to order the facets (lower appears first).",
+      "facet-expanded": "Facet Expanded",
+      "facet-expanded-help": "Determines whether the facet is opened or closed when list page is loaded.",
+      "field-help": "Fully qualified field name in the document model (if different from the name).",
+      "type-help": "Range selection for a <code>numerical</code> type, full-text values for a <code>string</code> type and structured content for a <code>keyword</code> type.",
+      "unique-name": "Criterion name must be unique.",
+      "hidden": "Hidden",
+      "hidden-help": "A hidden criterion is excluded from search.",
+      "term-sort-key-help": "The order by which terms of the citerion are listed.",
+      "terms-sort-key": "Terms Listing Order",
+      "range-aggregation": "Has Range Intervals",
+      "range-aggregation-help": "Numerical criterion with terms as range intervals.",
+      "error": {
+        "duplicate-criterion-alias": "This field is already associated with a criterion. Only a numerical field can have two criteria, a discrete and a range criterion."
+      }
+    },
+    "term-dialog": {
+      "add-term": "Add Term",
+      "edit-term": "Edit Term",
+      "name-help": "Unique name identifying this search criterion possible value.",
+      "keywords-help": "Optional list of keywords useful when building search requests.",
+      "unique-name": "The name of a criterion value must be unique."
+    },
+    "delete-dialog": {
+      "title": "Delete {{arg0}}",
+      "message": "Are you sure you want to delete the {{arg0}} '{{arg1}}'?"
+    }
+  },
+  "collected-dataset-config" : {
+    "title" : "Collected Dataset Configuration",
+    "schema-form": {
+      "title": "Form",
+      "info": "The custom collected dataset form can be specified both in terms of data structure (schema) and data display and validation (definition). See <a href='https://github.com/Textalk/angular-schema-form/blob/master/docs/index.md' target='_blank'>form schema documentation</a> for more details."
+    }
+  },
+  "harmonized-dataset-config" : {
+    "title" : "Harmonized Dataset Configuration",
+    "schema-form": {
+      "title": "Form",
+      "info": "The custom harmonized dataset form can be specified both in terms of data structure (schema) and data display and validation (definition). See <a href='https://github.com/Textalk/angular-schema-form/blob/master/docs/index.md' target='_blank'>form schema documentation</a> for more details."
+    }
+  },
+  "data-access-config": {
+    "dao-can-edit": "Grant Edit Permission to Data Access Officers.",
+    "dao-can-edit-help": "Data Access Officer has permission to edit a data access request/amendment when it is <strong>SUBMITTED</strong>, <strong>REVIEWED</strong>, <strong>APPROVED</strong> or <strong>REJECTED</strong>",
+    "menu": "Data Access",
+    "title": "Data Access Configuration",
+    "title-edit": "Edit Data Access Configuration",
+    "properties": {
+      "title": "Properties",
+      "info": "Some properties of the request will be extracted from the application form model according to their specified JSON field path."
+    },
+    "title-field": "Title Field",
+    "title-field-help": "The title of the request.",
+    "summary-field": "Summary Field",
+    "summary-field-help": "The lay summary of the request.",
+    "end-date-field": "End Date Field",
+    "end-date-field-help": "The end date of the project declared in the request. The date format must be yyyy-MM-dd (ISO 8601). If no end date can be identified either in the request form or in an amendment form, no report notifications will be sent.",
+    "general-config": "General Configuration",
+    "saved": "Data Access Form is successfully updated.",
+    "amendments-enabled": "Enable Amendments.",
+    "amendments-enabled-help":"Enable the capability of requesting amendments to an approved data access request.",
+    "feasibility-enabled": "Enable Feasibility Inquiry.",
+    "feasibility-enabled-help":"Enable the capability of inquiring for feasibility of a data access request.",
+    "pdf-download": {
+      "title": "PDF Download",
+      "info": "The data collected in the form can be rendered in a PDF file. Choose one of the following options:"
+    },
+    "pdf-template": {
+      "title": "PDF Template",
+      "info": "A PDF template is to be provided with field names matching the application form schema."
+    },
+    "pdf-embedded": {
+      "title": "Printable Page",
+      "info": "Render the data access request form as a printable page."
+    },
+    "schema-form": {
+      "title": "Application Form",
+      "info": "The form can be specified both in terms of data structure (schema) and data display and validation (definition). See <a href='https://github.com/Textalk/angular-schema-form/blob/master/docs/index.md' target='_blank'>form schema documentation</a> for more details."
+    },
+    "schema" : {
+      "tab": "Schema",
+      "info": "The form schema specifies the data structure."
+    },
+    "definition" : {
+      "tab": "Definition",
+      "info": "The form definition specifies how to display the schema and how to validate the data inputs."
+    },
+    "preview": {
+      "model-modal": "Model Preview",
+      "tab": "Preview",
+      "show-model": "Model",
+      "test": "Test Form Validation",
+      "tested": "Form is validated successfully."
+    },
+    "model": {
+      "tab": "Model",
+      "info": "The form model stores the valid input data, invalid values are excluded."
+    },
+    "private-comment-permission": "Give access to the private comments section.",
+    "action-log": {
+      "title": "Predefined Action Names",
+      "help": "An action name is a translation key that must be preceded by <strong>data-access-request.action-log.config.label.</strong>, <a href='#/admin/translations/edit?filter=data-access-request.action-log.config.label.'>here is</a> where you can add new translations.",
+      "action-logs-permission": "Apply the same permission to associated action logs"
+    },
+    "settings": {
+      "title": "General",
+      "info": "Alternate forms and permissions can be enabled."
+    },
+    "id-generation": {
+      "title": "ID Generation",
+      "info": "The ID of the data access requests can be generated following a pattern.",
+      "prefix": "Prefix",
+      "prefix-help": "Generated IDs will start with the specified text. Only alpha-numeric characters, underscores and hyphens are accepted.",
+      "length": "Length",
+      "length-help": "Length of the generated part of the ID (i.e. not including the prefix).",
+      "allow-id-with-leading-zeros": "Allow Leading Zeros",
+      "allow-id-with-leading-zeros-help": "Allow leading zeros when generating IDs."
+    },
+    "notifications": {
+      "title": "Notifications",
+      "info": "Emails can be sent to applicant and data access officers when an event happens on the data access request. Events can be: status change or comment. Notification email subjects can contain the following placeholders: ${organization}, ${title} and ${id} for the request id.",
+      "events": "Events",
+      "created": "On creation",
+      "createdSubject": "On creation email subject",
+      "created-help": "Email is sent to data access officers on data access request creation (i.e. saved for the first time but not yet submitted).",
+      "submitted": "On submission",
+      "submittedSubject": "On submission email subject",
+      "submitted-help": "Email is sent to data access officers and to applicant on data access request submission.",
+      "reviewed": "On review",
+      "reviewedSubject": "On review email subject",
+      "reviewed-help": "Email is sent to applicant when its data access request is being reviewed.",
+      "approved": "On approval",
+      "approvedSubject": "On approval email subject",
+      "approved-help": "Email is sent to applicant when its data access request is approved.",
+      "rejected": "On rejection",
+      "rejectedSubject": "On rejection email subject",
+      "rejected-help": "Email is sent to applicant when its data access request is rejected.",
+      "reopened": "On reopening",
+      "reopenedSubject": "On reopening email subject",
+      "reopened-help": "Email is sent to applicant when its data access request is reopened.",
+      "commented": "On comment",
+      "commentedSubject": "On comment email subject",
+      "commented-help": "Email is sent to applicant and data access officers when the data access request is commented.",
+      "attachment": "On documents update",
+      "attachmentSubject": "On documents update email subject",
+      "attachment-help": "Email is sent to applicant and data access officers when the document list of the data access request is updated.",
+      "conditionallyApproved": "On conditional approval",
+      "conditionallyApprovedSubject": "On conditional approval email subject",
+      "conditionallyApproved-help": "Email is sent to applicant when its data access request is in the 'Conditionally Approved' state.",
+      "reports":  "Reports",
+      "finalReport": "Final report reminder",
+      "finalReportSubject": "Final report reminder email subject",
+      "finalReport-help": "Email is sent to applicant to remind that a final report is due. Applies to approved data access requests only.",
+      "intermediateReport": "Intermediate report reminder",
+      "intermediateReportSubject": "Intermediate report reminder email subject",
+      "intermediateReport-help": "Email is sent to applicant to remind that an intermediate (yearly) report is due. Applies to approved data access requests only.",
+      "nbOfDaysBeforeReport": "Days before sending a report reminder",
+      "nbOfDaysBeforeReport-help": "Number of days before sending a reminder email for the intermediate or the final reports."
+    },
+    "workflow": {
+      "title": "Workflow",
+      "info": "The data access request goes through several steps. Some minimum settings can be applied to control this workflow.",
+      "with-review": "With 'Under Review' intermediate state",
+      "with-review-help": "Between the submission and the approval/rejection of the data access request, an intermediate state can be used to inform applicant that its request is being processed.",
+      "approved-final": "'Approved' state is final",
+      "approved-final-help": "If not final, an approved data access request can be reinstated to its previous state.",
+      "rejected-final": "'Rejected' state is final",
+      "rejected-final-help": "If not final, a rejected data access request can be reinstated to its previous state.",
+      "with-conditional-approval": "With 'Conditionally Approved' intermediate state",
+      "with-conditional-approval-help": "Between the submission and the approval/rejection of the data access request, an intermediate state can be used to allow the applicant to edit its request."
+    },
+    "permissions": {
+      "title": "Data Access Permissions",
+      "info": "Grant permissions to <code>Read</code> any data access requests."
+    },
+    "syntax-error": {
+      "definition": "Form definition is not a valid document, please revise and correct the errors.",
+      "schema": "Form schema is not a valid document, please revise and correct the errors."
+    },
+    "parse-error": {
+      "definition": "Form definition is not a valid document, please contact your administrator to configure the form definition.",
+      "schema": "Form schema is not a valid document, please contact your administrator to configure the form schema."
+    },
+    "amendment": {
+      "schema-form": {
+        "title": "Amendment Form",
+        "info": "The amendment form can be specified both in terms of data structure (schema) and data display and validation (definition). See <a href='https://github.com/Textalk/angular-schema-form/blob/master/docs/index.md' target='_blank'>form schema documentation</a> for more details."
+      },
+      "properties": {
+        "title": "Properties",
+        "info": "Some properties of the amendment will be extracted from the application form model according to their specified JSON field path."
+      },
+      "title-field": "Title Field",
+      "title-field-help": "The title of the amendment.",
+      "summary-field": "Summary Field",
+      "summary-field-help": "The lay summary of the amendment.",
+      "end-date-field": "End Date Field",
+      "end-date-field-help": "The end date of the project declared in the amendment. If no end date can be identified either in the request form or in an amendment form, no report notifications will be sent."
+    },
+    "feasibility": {
+      "schema-form": {
+        "title": "Feasibility Form",
+        "info": "The feasibility form can be specified both in terms of data structure (schema) and data display and validation (definition). See <a href='https://github.com/Textalk/angular-schema-form/blob/master/docs/index.md' target='_blank'>form schema documentation</a> for more details."
+      }
+    }
+  },
+  "key-list": {
+    "add-key": "Add Key",
+    "edit-key": "Edit Key",
+    "delete-dialog": {
+      "title": "Delete Key",
+      "message": "Are you sure you want to delete '{{key}}'?"
+    },
+    "error": {
+      "unique-key": "Key must be unique.",
+      "key-character-error": "Key contains invalid characters. Please avoid characters such as spaces, '.', '~' and '!'."
+    },
+    "modal-add-help": "Do not use spaces, '.', '~', '!' and hyphenate multiple words."
+  },
+  "entity-config": {
+    "save-alert": {
+      "success": "All your changes were successfully saved."
+    },
+    "syntax-error": {
+      "definition": "Form definition is not a valid document, please revise and correct the errors.",
+      "schema": "Form schema is not a valid document, please revise and correct the errors."
+    },
+    "parse-error": {
+      "definition": "Form definition is not a valid document, please contact your administrator to configure the form definition.",
+      "schema": "Form schema is not a valid document, please contact your administrator to configure the form schema."
+    }
+  },
+  "entity-sf-config": {
+    "schema-form": {
+      "title": "Form",
+      "info": "The form can be specified both in terms of data structure (schema) and data display and validation (definition). See <a href='https://github.com/Textalk/angular-schema-form/blob/master/docs/index.md' target='_blank'>form schema documentation</a> for more details."
+    },
+    "schema": {
+      "tab": "Schema",
+      "info": "The form schema specifies the data structure."
+    },
+    "definition": {
+      "tab": "Definition",
+      "info": "The form definition specifies how to display the schema and how to validate the data inputs."
+    },
+    "preview": {
+      "model-modal": "Model Preview",
+      "tab": "Preview",
+      "show-model": "Model",
+      "test": "Test Form Validation",
+      "tested": "Form is validated successfully."
+    },
+    "model": {
+      "tab": "Model",
+      "info": "The form model stores the valid input data, invalid values are excluded."
+    }
+  },
+  "project-config": {
+    "menu": "Research Project",
+    "title": "Research Project Configuration",
+    "title-edit": "Edit Research Project Configuration",
+    "general-config": "General Configuration",
+    "saved": "Research Project Form is successfully updated.",
+    "schema-form": {
+      "title": "Form",
+      "info": "The research project form can be specified both in terms of data structure (schema) and data display and validation (definition). See <a href='https://github.com/Textalk/angular-schema-form/blob/master/docs/index.md' target='_blank'>form schema documentation</a> for more details."
+    },
+    "schema": {
+      "tab": "Schema",
+      "info": "The form schema specifies the data structure."
+    },
+    "definition": {
+      "tab": "Definition",
+      "info": "The form definition specifies how to display the schema and how to validate the data inputs."
+    },
+    "preview": {
+      "model-modal": "Model Preview",
+      "tab": "Preview",
+      "show-model": "Model",
+      "test": "Test Form Validation",
+      "tested": "Form is validated successfully."
+    },
+    "model": {
+      "tab": "Model",
+      "info": "The form model stores the valid input data, invalid values are excluded."
+    }
+  },
+  "comments": "Comments",
+  "comment": {
+    "write": "Write",
+    "preview": "Preview",
+    "placeholder": "Leave a comment",
+    "send": "Comment",
+    "markdown-doc-link": "Markdown documentation",
+    "created-by": "Created by",
+    "modified-by": "Last modified by",
+    "delete-dialog": {
+      "title": "Delete Comment",
+      "message": "Are you sure you want to delete this comment by '{{arg0}}'?"
+    }
+  },
+  "taxonomy": {
+    "target": {
+      "all": "All",
+      "variable": "Variable",
+      "dataset": "Dataset",
+      "study": "Study",
+      "network": "Network"
+    }
+  },
+  "and": "AND",
+  "nand": "NAND",
+  "or": "OR",
+  "nor": "NOR",
+  "to": "to",
+  "graphics": {
+    "nbr-studies": "Studies",
+    "number-participants": "Participants",
+    "country": "Country",
+    "geo-charts": "Geographical Distribution",
+    "study-design": "Study Design",
+    "bio-samples": "Collected Biosamples",
+    "geo-chart-title": "Distribution of studies by country of residence",
+    "geo-chart-subtitle": " Multiple countries can be associated with one study.",
+    "study-design-chart-title": "Distribution of Studies by Study Design",
+    "bio-samples-chart-title": "Distribution of studies by Collected Biosamples",
+    "number-participants-chart-title": "Distribution of studies by number of participants",
+    "percentage.studies": "Percentage of Studies",
+    "study-start-year": "Study Start Year",
+    "study-start-year-chart-title": "Distribution of studies by start year",
+    "undetermined": "Undetermined",
+    "total": "Total"
+  },
+  "research-projects": "Research Projects",
+  "research-project": {
+    "label": "Research Project",
+    "add": "Add Project",
+    "none": "No projects.",
+    "data-access-request": "Data Access Request",
+    "title": "Title",
+    "summary": "Summary",
+    "main-section": "<h3>General</h3>",
+    "restore-dialog": {
+      "title": "Restoring Project from Revision",
+      "message": "Are you sure you want to restore this revision from '{{arg0}}'?"
+    },
+    "default": {
+      "status": {
+        "title": "Status",
+        "help": "Specify the timeline of the project.",
+        "start": "Start Date",
+        "start-help": "Start date of the project.",
+        "end": "End Date",
+        "end-help": "Expected or effective end date of the project.",
+        "date-error": "Not a valid date."
+      },
+      "contact": {
+        "title": "Contact Details",
+        "help": "Specify the Principal Investigator's contact information.",
+        "name": "Name",
+        "institution": "Institution"
+      }
+    }
+  },
+  "client": {
+    "variable": {
+      "type": {
+        "DataSchema": "Harmonized",
+        "Dataschema": "Harmonized",
+        "Harmonized": "Study Specific Harmonized",
+        "Collected": "Collected"
+      }
+    },
+    "message": {
+      "variable": {
+        "no-harmonization-algo": "No harmonization algorithms found for this variable."
+      }
+    },
+    "label": {
+      "countries": "Countries",
+      "dataschema-variable": "Harmonized Variable",
+      "dataschema-variables": "Harmonized Variables",
+      "study-variable": "Collected Variable",
+      "study-variables": "Collected Variables",
+      "overview": "Overview",
+      "missing": "Missing",
+      "dataset": {
+        "complete": "Complete",
+        "undetermined": "Undetermined",
+        "variable-crosstab": "Variable Crosstab",
+        "participants": "Participants",
+        "dataset-type": "Dataset Type",
+        "number-of-variables": "Number of Variables"
+      },
+      "network": {
+        "summary-stats": "Summary Statistics"
+      },
+      "study": {
+        "sample-size": "Sample Size",
+        "target-number": "Target Number"
+      },
+      "variable": {
+        "value-type": "Value Type",
+        "unit": "Unit",
+        "variable-type": "Variable Type",
+        "categories": "Categories",
+        "statistics": "Statistics",
+        "harmonization": "Harmonization",
+        "harmonized-variable": "Harmonized Variable",
+        "harmonization-algo": "Harmonization Algorithms",
+        "show-harmo-algo": "Show Harmonization Algorithms",
+        "cummulative-summary": "Cumulative Summary of all Studies",
+        "script": "Script",
+        "status-detail": "Status Detail"
+      }
+    }
+  },
+  "report-group": {
+    "study": {
+      "button-name": "Report",
+      "name": "Study Name",
+      "acronym": "Acronym",
+      "country": "Country",
+      "start-year": "Start Year",
+      "years-of-follow-up": "Years of Follow-up",
+      "study-design": "Study Design",
+      "recruitment-target": "Recruitment Target",
+      "number-of-participants": "Number of Participants",
+      "number-of-bio-samples": "Number of Participants with biosamples",
+      "status": "Status",
+      "type": "Type",
+      "type-individual":"Individual",
+      "type-harmonization":"Harmonization",
+      "population": {
+        "name": "Population",
+        "source-of-recruitment": "Sources of Recruitment",
+        "minimum-age": "Minimum Age",
+        "maximum-age": "Maximum Age",
+        "number-of-participants": "Number of Participants",
+        "number-of-bio-samples": "Number of Participants with biosamples",
+        "number-of-data-collection-events": "Number of Data Collection Events"
+      }
+    }
+  },
+  "realm": {
+    "test": "Validate",
+    "oidc": {
+      "signin-with": "Sign in with",
+      "signup-with": "Sign up with"
+    }
+  },
+  "simple-mde": {
+    "toolbar": {
+      "bold": "Bold",
+      "italic": "Italic",
+      "heading": "Heading",
+      "quote": "Quote",
+      "unordered_list": "Generic List",
+      "ordered_list": "Numbered List",
+      "link": "Create Link",
+      "image": "Insert Image",
+      "table": "Insert Table",
+      "preview": "Toggle Preview"
+    }
+  },
+  "persons": {
+    "title": "Persons",
+    "none": "No persons.",
+    "add-networks": "Add Networks",
+    "add-studies": "Add Studies",
+    "no-entity-memberships": "No membership roles.",
+    "add-person": "Add Person",
+    "no-memberships": "{{fullname}} is not a member of any network or study.",
+    "entity-roles-help": "At least one role must be selected.",
+    "network-entities-roles-help": "To add a membership select at least one role and one network.",
+    "study-entities-roles-help": "To add a membership select at least one role and one study.",
+    "network-roles-table-help": "List of membership roles for each network.",
+    "study-roles-table-help": "List of membership roles for each study.",
+    "network-member-of-all": "{{fullname}} is member of all networks.",
+    "study-member-of-all": "{{fullname}} is member of all studies.",
+    "update-roles-dialog": {
+      "title": "Update Roles",
+      "message": "Select one or more roles to assign to {{member}}."
+    },
+    "entity-list-dialog": {
+      "network-title": "Add Member to Networks",
+      "study-title": "Add Member to Studies"
+    },
+    "delete-dialog":{
+      "title": "Delete Person",
+      "message": "Are you sure you want to delete the person '{{arg0}}'?"
+    },
+    "delete-entities-dialog":{
+      "title": "Delete Membership",
+      "message": "Are you sure you want to delete all roles from {{arg0}}?"
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "name": "sf-radio-group-collection",
+  "version": "1.1.0",
+  "license": "MIT",
+  "author": "obiba",
+  "main": [
+    "dist/sf-radio-group-collection.js"
+  ],
+  "keywords": [
+    "angular-schema-form",
+    "schema-form",
+    "form",
+    "json",
+    "json-schema",
+    "schema"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "angular-schema-form": "^0.8.13",
+    "angular-schema-form-bootstrap": "^0.2.0",
+    "bootstrap": "^3.3.6",
+    "angular-bootstrap": "1.3.2"
+  },
+  "homepage": "https://github.com/obiba/sf-radio-group-collection",
+  "_release": "1.1.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "1.1.0",
+    "commit": "69ad7165248260a81e939dd636d9781582386d5d"
+  },
+  "_source": "https://github.com/obiba/sf-radio-group-collection.git",
+  "_target": "1.1.0",
+  "_originalSource": "https://github.com/obiba/sf-radio-group-collection.git"
+}

@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Implementation-Title: mica-webapp
+Implementation-Version: 4.1.1
+Archiver-Version: Plexus Archiver
+Built-By: travis
+Implementation-Vendor-Id: org.obiba.mica
+Created-By: Apache Maven 3.6.3
+Build-Jdk: 1.8.0_242
+Implementation-URL: https://projects.spring.io/spring-boot/mica/mica-w
+ ebapp/
+Implementation-Vendor: Pivotal Software, Inc.
+

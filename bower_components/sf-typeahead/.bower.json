@@ -1,0 +1,40 @@
+{
+  "name": "sf-typeahead",
+  "version": "1.1.1",
+  "license": "MIT",
+  "author": "obiba",
+  "main": [
+    "dist/sf-typeahead.min.js"
+  ],
+  "keywords": [
+    "angular-schema-form",
+    "schema-form",
+    "form",
+    "json",
+    "json-schema",
+    "schema"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "angular-schema-form": "^0.8.13",
+    "angular-schema-form-bootstrap": "^0.2.0",
+    "bootstrap": "^3.3.7",
+    "angular-bootstrap": "2.5.0"
+  },
+  "homepage": "https://github.com/obiba/sf-typeahead",
+  "_release": "1.1.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "1.1.1",
+    "commit": "65370ab81b09fa6b8aa83ee854fd7d92766ddc5e"
+  },
+  "_source": "https://github.com/obiba/sf-typeahead.git",
+  "_target": "1.1.1",
+  "_originalSource": "https://github.com/obiba/sf-typeahead.git"
+}

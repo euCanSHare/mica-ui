@@ -1,0 +1,244 @@
+<!--
+  ~ Copyright (c) 2018 OBiBa. All rights reserved.
+  ~
+  ~ This program and the accompanying materials
+  ~ are made available under the terms of the GNU Public License v3.0.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<div>
+
+  <h2>
+    <ol class="breadcrumb mica-breadcrumb">
+      <li><a href="#/admin" translate>global.menu.admin</a></li>
+      <li class="active" translate>data-access-config.title</li>
+    </ol>
+  </h2>
+
+  <obiba-alert id="DataAccessConfigController"></obiba-alert>
+
+  <div class="tabs-menu" ng-class="{'tabs-left': screen.is('lg')}">
+    <ul class="nav nav-tabs">
+      <li ng-class="{'active': tab.name === 'form'}">
+        <a href ng-click="tab.name = 'form'" title="{{'form' | translate}}"><i class="fa fa-list"></i></a>
+      </li>
+      <li ng-class="{'active': tab.name === 'feasibility'}">
+        <a href ng-click="tab.name = 'feasibility'" title="{{'data-access-config.feasibility.schema-form.title' | translate}}"><i class="fa fa-question-circle"></i></a>
+      </li>
+      <li ng-class="{'active': tab.name === 'amendment'}">
+        <a href ng-click="tab.name = 'amendment'" title="{{'data-access-config.amendment.schema-form.title' | translate}}"><i class="fa fa-wpforms"></i></a>
+      </li>
+      <li ng-class="{'active': tab.name === 'notifications'}">
+        <a href ng-click="tab.name = 'notifications'" title="{{'data-access-config.notifications.title' | translate}}"><i class="fa fa-envelope"></i></a>
+      </li>
+      <li ng-class="{'active': tab.name === 'settings'}">
+        <a href ng-click="tab.name = 'settings'" title="{{'other-settings' | translate}}"><i class="fa fa-cog"></i></a>
+      </li>
+      <li ng-class="{'active': tab.name === 'permissions'}">
+        <a href ng-click="tab.name = 'permissions'; loadPermissions();" title="{{'permissions' | translate}}"><i class="fa fa-lock"></i></a>
+      </li>
+    </ul>
+  </div>
+
+  <div ng-show="tab.name === 'form'">
+    <span class="config-navigation"><h3 class="config-navigation-item" ng-class="{'active': tab.name === 'form'}" translate>data-access-config.schema-form.title</h3></span>
+
+    <p class="help-block" translate>data-access-config.schema-form.info</p>
+
+    <entity-sf-config form="form" alert-id="DataAccessConfigController" dirty-observable="state.getDirtyObservable()"></entity-sf-config>
+
+    <div class="row">
+      <div class="col-md-6">
+        <h3 translate>data-access-config.properties.title</h3>
+        <p class="help-block" translate>data-access-config.properties.info</p>
+        <form>
+          <div form-input name="titleFieldPath" model="dataAccessForm.titleFieldPath" label="data-access-config.title-field" required="false" help="data-access-config.title-field-help"></div>
+          <div form-input name="summaryFieldPath" model="dataAccessForm.summaryFieldPath" label="data-access-config.summary-field" required="false" help="data-access-config.summary-field-help"></div>
+          <div form-input name="endDateFieldPath" model="dataAccessForm.endDateFieldPath" label="data-access-config.end-date-field" required="false" help="data-access-config.end-date-field-help"></div>
+        </form>
+      </div>
+      <div class="col-md-6">
+        <h3 translate>data-access-config.pdf-download.title</h3>
+        <p class="help-block" translate>data-access-config.pdf-download.info</p>
+
+        <div>
+          <label>
+            <input type="radio" name="role" value="Template" ng-model="dataAccessForm.pdfDownloadType" required>
+            <span translate>data-access-config.pdf-template.title</span>
+          </label>
+          <p class="help-block" translate>data-access-config.pdf-template.info</p>
+
+          <uib-tabset>
+            <uib-tab ng-repeat="tab in tabs" heading="{{'language.' + tab.lang | translate}}" disable="tab.disabled">
+              <div class="voffset2"></div>
+              <attachment-input files="pdfTemplates[tab.lang]" accept="*.pdf" multiple="false"></attachment-input>
+            </uib-tab>
+          </uib-tabset>
+
+          <div class="help-block">
+            <span>{{'allowed-file-types' | translate}}<span><strong>{{fileTypes}}</strong></span></span>
+          </div>
+        </div>
+
+        <div class="voffset4">
+          <label>
+            <input type="radio" name="role" value="Embedded" ng-model="dataAccessForm.pdfDownloadType" required>
+            <span translate>data-access-config.pdf-embedded.title</span>
+          </label>
+          <p class="help-block" translate>data-access-config.pdf-embedded.info</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div ng-show="tab.name === 'feasibility'">
+    <span class="config-navigation"><h3 class="config-navigation-item" ng-class="{'active': tab.name === 'feasibility'}" translate>data-access-config.feasibility.schema-form.title</h3></span>
+    <p class="help-block" translate>data-access-config.feasibility.schema-form.info</p>
+    <entity-sf-config form="formFeasibility" alert-id="DataAccessConfigController" dirty-observable="state.getDirtyObservable()"></entity-sf-config>
+  </div>
+
+  <div ng-show="tab.name === 'amendment'">
+    <span class="config-navigation"><h3 class="config-navigation-item" ng-class="{'active': tab.name === 'amendment'}" translate>data-access-config.amendment.schema-form.title</h3></span>
+    <p class="help-block" translate>data-access-config.amendment.schema-form.info</p>
+    <entity-sf-config form="formAmendment" alert-id="DataAccessConfigController" dirty-observable="state.getDirtyObservable()"></entity-sf-config>
+
+    <h3 translate>data-access-config.amendment.properties.title</h3>
+
+    <p class="help-block" translate>data-access-config.amendment.properties.info</p>
+
+    <form>
+      <div class="row">
+        <div class="col-md-6">
+          <div form-input name="titleFieldPath" model="amendmentForm.titleFieldPath" label="data-access-config.amendment.title-field" required="false" help="data-access-config.amendment.title-field-help"></div>
+          <div form-input name="summaryFieldPath" model="amendmentForm.summaryFieldPath" label="data-access-config.amendment.summary-field" required="false" help="data-access-config.amendment.summary-field-help"></div>
+        </div>
+        <div class="col-md-6">
+          <div form-input name="endDateFieldPath" model="amendmentForm.endDateFieldPath" label="data-access-config.amendment.end-date-field" required="false" help="data-access-config.amendment.end-date-field-help"></div>
+        </div>
+      </div>
+    </form>
+
+  </div>
+
+  <div ng-show="tab.name === 'settings'">
+
+    <div class="row">
+      <div class="col-md-6">
+        <h3 translate>data-access-config.settings.title</h3>
+        <p class="help-block" translate>data-access-config.settings.info</p>
+        <form>
+          <div form-checkbox name="feasibilityEnabled" model="dataAccessForm.feasibilityEnabled" label="data-access-config.feasibility-enabled" help="data-access-config.feasibility-enabled-help"></div>
+          <div form-checkbox name="amendmentsEnabled" model="dataAccessForm.amendmentsEnabled" label="data-access-config.amendments-enabled" help="data-access-config.amendments-enabled-help"></div>
+          <div form-checkbox name="daoCanEdit" model="dataAccessForm.daoCanEdit" label="data-access-config.dao-can-edit"></div>
+          <p class="help-block" translate>data-access-config.dao-can-edit-help</p>
+        </form>
+      </div>
+      <div class="col-md-6">
+        <h3 translate>data-access-config.id-generation.title</h3>
+        <p class="help-block" translate>data-access-config.id-generation.info</p>
+        <form>
+          <div form-input name="idPrefix" model="dataAccessForm.idPrefix" label="data-access-config.id-generation.prefix" pattern="'[a-zA-Z0-9_-]+'" required="false" help="data-access-config.id-generation.prefix-help"></div>
+          <div form-input name="idLength" model="dataAccessForm.idLength" label="data-access-config.id-generation.length" type="number" required="false" help="data-access-config.id-generation.length-help"></div>
+          <div form-checkbox name="allowIdWithLeadingZeros" model="dataAccessForm.allowIdWithLeadingZeros" label="data-access-config.id-generation.allow-id-with-leading-zeros" help="data-access-config.id-generation.allow-id-with-leading-zeros-help"></div>
+        </form>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <h3 translate>data-access-config.workflow.title</h3>
+        <p class="help-block" translate>data-access-config.workflow.info</p>
+        <form>
+          <div form-checkbox name="withReview" model="dataAccessForm.withReview" label="data-access-config.workflow.with-review" help="data-access-config.workflow.with-review-help"></div>
+          <div form-checkbox name="withConditionalApproval" model="dataAccessForm.withConditionalApproval" label="data-access-config.workflow.with-conditional-approval" help="data-access-config.workflow.with-conditional-approval-help"></div>
+          <div form-checkbox name="approvedFinal" model="dataAccessForm.approvedFinal" label="data-access-config.workflow.approved-final" help="data-access-config.workflow.approved-final-help"></div>
+          <div form-checkbox name="rejectedFinal" model="dataAccessForm.rejectedFinal" label="data-access-config.workflow.rejected-final" help="data-access-config.workflow.rejected-final-help"></div>
+        </form>
+      </div>
+      <div class="col-md-6">
+        <key-list title-key="data-access-config.action-log.title"
+                  help-key="data-access-config.action-log.help"
+                  keys="dataAccessForm.predefinedActions"
+                  translation-prefix="data-access-request.action-log.config.label"
+                  on-update-keys="onUpdateActionKeys(keys)">
+        </key-list>
+      </div>
+    </div>
+  </div>
+
+  <div ng-show="tab.name === 'notifications'">
+    <h3 translate>data-access-config.notifications.title</h3>
+
+    <p class="help-block" translate>data-access-config.notifications.info</p>
+
+    <uib-tabset>
+      <uib-tab heading="{{'data-access-config.notifications.events' | translate}}">
+        <form>
+          <div class="row">
+            <div class="col-md-6">
+              <div form-checkbox name="notifyCreated" model="dataAccessForm.notifyCreated" label="data-access-config.notifications.created" help="data-access-config.notifications.created-help"></div>
+              <div form-input name="createdSubject" model="dataAccessForm.createdSubject" label="data-access-config.notifications.createdSubject" placeholder="[${organization}] ${title}" required="false" disable="!dataAccessForm.notifySubmitted"></div>
+              <div form-checkbox name="notifySubmitted" model="dataAccessForm.notifySubmitted" label="data-access-config.notifications.submitted" help="data-access-config.notifications.submitted-help"></div>
+              <div form-input name="submittedSubject" model="dataAccessForm.submittedSubject" label="data-access-config.notifications.submittedSubject" placeholder="[${organization}] ${title}" required="false" disable="!dataAccessForm.notifySubmitted"></div>
+              <div form-checkbox name="notifyReviewed" model="dataAccessForm.notifyReviewed" label="data-access-config.notifications.reviewed" help="data-access-config.notifications.reviewed-help"></div>
+              <div form-input name="reviewedSubject" model="dataAccessForm.reviewedSubject" placeholder="[${organization}] ${title}" label="data-access-config.notifications.reviewedSubject" required="false" disable="!dataAccessForm.notifyReviewed"></div>
+              <div form-checkbox name="notifyReopened" model="dataAccessForm.notifyReopened" label="data-access-config.notifications.reopened" help="data-access-config.notifications.reopened-help"></div>
+              <div form-input name="reopenedSubject" model="dataAccessForm.reopenedSubject" placeholder="[${organization}] ${title}" label="data-access-config.notifications.reopenedSubject" required="false" disable="!dataAccessForm.notifyReopened"></div>
+              <div form-checkbox name="notifyConditionallyApproved" model="dataAccessForm.notifyConditionallyApproved" label="data-access-config.notifications.conditionallyApproved" help="data-access-config.notifications.conditionallyApproved-help"></div>
+              <div form-input name="conditionallyApprovedSubject" model="dataAccessForm.conditionallyApprovedSubject" placeholder="[${organization}] ${title}" label="data-access-config.notifications.conditionallyApprovedSubject"></div>
+            </div>
+            <div class="col-md-6">
+              <div form-checkbox name="notifyRejected" model="dataAccessForm.notifyRejected" label="data-access-config.notifications.rejected" help="data-access-config.notifications.rejected-help"></div>
+              <div form-input name="rejectedSubject" model="dataAccessForm.rejectedSubject" placeholder="[${organization}] ${title}" label="data-access-config.notifications.rejectedSubject" required="false" disable="!dataAccessForm.notifyRejected"></div>
+              <div form-checkbox name="notifyApproved" model="dataAccessForm.notifyApproved" label="data-access-config.notifications.approved" help="data-access-config.notifications.approved-help"></div>
+              <div form-input name="approvedSubject" model="dataAccessForm.approvedSubject" placeholder="[${organization}] ${title}" label="data-access-config.notifications.approvedSubject" required="false" disable="!dataAccessForm.notifyApproved"></div>
+              <div form-checkbox name="notifyCommented" model="dataAccessForm.notifyCommented" label="data-access-config.notifications.commented" help="data-access-config.notifications.commented-help"></div>
+              <div form-input name="commentedSubject" model="dataAccessForm.commentedSubject" placeholder="[${organization}] ${title}" label="data-access-config.notifications.commentedSubject" required="false" disable="!dataAccessForm.notifyCommented"></div>
+              <div form-checkbox name="notifyAttachment" model="dataAccessForm.notifyAttachment" label="data-access-config.notifications.attachment" help="data-access-config.notifications.attachment-help"></div>
+              <div form-input name="attachmentSubject" model="dataAccessForm.attachmentSubject" placeholder="[${organization}] ${title}" label="data-access-config.notifications.attachmentSubject" required="false" disable="!dataAccessForm.notifyAttachment"></div>
+            </div>
+          </div>
+        </form>
+      </uib-tab>
+      <uib-tab heading="{{'data-access-config.notifications.reports' | translate}}">
+        <form>
+          <div class="row">
+            <div class="col-md-6">
+              <div form-checkbox name="notifyFinalReport" model="dataAccessForm.notifyFinalReport" label="data-access-config.notifications.finalReport" help="data-access-config.notifications.finalReport-help"></div>
+              <div form-input name="finalReportSubject" model="dataAccessForm.finalReportSubject" placeholder="[${organization}] ${title}" label="data-access-config.notifications.finalReportSubject" required="false" disable="!dataAccessForm.notifyFinalReport"></div>
+              <div form-checkbox name="notifyIntermediateReport" model="dataAccessForm.notifyIntermediateReport" label="data-access-config.notifications.intermediateReport" help="data-access-config.notifications.intermediateReport-help"></div>
+              <div form-input name="intermediateReportSubject" model="dataAccessForm.intermediateReportSubject" placeholder="[${organization}] ${title}" label="data-access-config.notifications.intermediateReportSubject" required="false" disable="!dataAccessForm.notifyIntermediateReport"></div>
+            </div>
+            <div class="col-md-6">
+              <div form-input type="number" model="dataAccessForm.nbOfDaysBeforeReport" label="data-access-config.notifications.nbOfDaysBeforeReport" help="data-access-config.notifications.nbOfDaysBeforeReport-help"></div>
+            </div>
+          </div>
+        </form>
+      </uib-tab>
+    </uib-tabset>
+
+  </div>
+
+  <div ng-show="tab.name === 'permissions'">
+    <h3 translate>permissions</h3>
+
+    <p class="help-block" translate>data-access-config.permissions.info</p>
+
+    <permission-config-table other-resources="otherResources" permissions="acls" on-load="loadPermissions" on-add="addPermission" on-delete="deletePermission" name="'data-access-requests'"></permission-config-table>
+
+  </div>
+
+  <div ng-show="tab.name !== 'permissions'" class="voffset4">
+      <a href="#/admin" class="btn btn-default">
+      <span translate>cancel</span>
+    </a>
+
+    <button ng-click="saveForm()" class="btn btn-primary">
+      <span translate>save</span>
+    </button>
+  </div>
+
+</div>

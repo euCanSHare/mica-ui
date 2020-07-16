@@ -1,0 +1,44 @@
+{
+  "name": "sf-obiba-simple-mde",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "obiba",
+  "main": [
+    "dist/sf-simple-mde.js"
+  ],
+  "keywords": [
+    "angular-schema-form",
+    "schema-form",
+    "form",
+    "json",
+    "json-schema",
+    "schema"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "simplemde": "^1.11.2",
+    "ng-obiba": "https://github.com/obiba/ng-obiba.git#2.0.0"
+  },
+  "devDependencies": {
+    "angular-schema-form": "^0.8.13",
+    "angular-schema-form-bootstrap": "^0.2.0",
+    "bootstrap": "^3.3.7",
+    "angular-bootstrap": "2.5.0"
+  },
+  "homepage": "https://github.com/obiba/sf-obiba-simple-mde",
+  "_release": "1.0.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "1.0.0",
+    "commit": "26c0cff2b915ebee639342f4b13711a12d224e38"
+  },
+  "_source": "https://github.com/obiba/sf-obiba-simple-mde.git",
+  "_target": "1.0.0",
+  "_originalSource": "https://github.com/obiba/sf-obiba-simple-mde.git"
+}

@@ -43,15 +43,15 @@
             <#if config.networkEnabled && !config.singleNetworkEnabled>
               <div class="col-lg-3 col-sm-6">
                 <!-- small box -->
-                <div class="small-box bg-info">
+                <div class="small-box">
                   <div class="inner">
                     <h3 id="network-hits">-</h3>
                     <p><@message "networks"/></p>
                   </div>
-                  <div class="icon">
+                  <div class="icon-mod">
                     <i class="${networkIcon}"></i>
                   </div>
-                  <a href="${networksLink}" class="small-box-footer"><@message "more-info"/> <i class="fas fa-arrow-circle-right"></i></a>
+                  <a href="${networksLink}" class="small-box-footer-mod"><@message "more-info"/> <i class="fas fa-arrow-circle-right"></i></a>
                 </div>
               </div>
               <!-- ./col -->
@@ -60,15 +60,15 @@
             <#if !config.singleStudyEnabled>
               <div class="col-lg-3 col-sm-6">
                 <!-- small box -->
-                <div class="small-box bg-success">
+                <div class="small-box">
                   <div class="inner">
                     <h3 id="study-hits">-</h3>
                     <p><@message "studies"/></p>
                   </div>
-                  <div class="icon">
+                  <div class="icon-mod">
                     <i class="${studyIcon}"></i>
                   </div>
-                  <a href="${studiesLink}" class="small-box-footer"><@message "more-info"/> <i class="fas fa-arrow-circle-right"></i></a>
+                  <a href="${studiesLink}" class="small-box-footer-mod"><@message "more-info"/> <i class="fas fa-arrow-circle-right"></i></a>
                 </div>
               </div>
               <!-- ./col -->
@@ -77,29 +77,29 @@
             <#if config.studyDatasetEnabled || config.harmonizationDatasetEnabled>
               <div class="col-lg-3 col-sm-6">
                 <!-- small box -->
-                <div class="small-box bg-warning">
+                <div class="small-box">
                   <div class="inner">
                     <h3 id="dataset-hits">-</h3>
                     <p><@message "datasets"/></p>
                   </div>
-                  <div class="icon">
+                  <div class="icon-mod">
                     <i class="${datasetIcon}"></i>
                   </div>
-                  <a href="${datasetsLink}" class="small-box-footer"><@message "more-info"/> <i class="fas fa-arrow-circle-right"></i></a>
+                  <a href="${datasetsLink}" class="small-box-footer-mod"><@message "more-info"/> <i class="fas fa-arrow-circle-right"></i></a>
                 </div>
               </div>
               <!-- ./col -->
               <div class="col-lg-3 col-sm-6">
                 <!-- small box -->
-                <div class="small-box bg-danger">
+                <div class="small-box">
                   <div class="inner">
                     <h3 id="variable-hits">-</h3>
                     <p><@message "variables"/></p>
                   </div>
-                  <div class="icon">
+                  <div class="icon-mod">
                     <i class="${variableIcon}"></i>
                   </div>
-                  <a href="../search#lists?type=variables" class="small-box-footer"><@message "more-info"/> <i class="fas fa-arrow-circle-right"></i></a>
+                  <a href="../search#lists?type=variables" class="small-box-footer-mod"><@message "more-info"/> <i class="fas fa-arrow-circle-right"></i></a>
                 </div>
               </div>
               <!-- ./col -->

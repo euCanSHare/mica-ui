@@ -1,5 +1,5 @@
 <#macro leftmenus>
-  <li id="homeMenu" class="nav-item">
+  <!--<li id="homeMenu" class="nav-item">
     <a href="/" class="nav-link"><@message "home"/></a>
   </li>
   <#if config??>
@@ -52,6 +52,6 @@
         <a href="/data-accesses" class="btn btn-warning"><@message "data-access"/> <i class="fas fa-arrow-circle-right"></i></a>
       </li>
     </#if>
-  </#if>
+  </#if> -->
   <#include "../models/navbar-menus-left.ftl"/>
 </#macro>

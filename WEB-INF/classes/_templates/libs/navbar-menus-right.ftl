@@ -50,11 +50,12 @@
             <a class="nav-link" href="https://dev-agate.eucanshare.bsc.es/auth/signin/eush-dev<#if !rc.requestUri?starts_with("/forgot-password") && !rc.requestUri?starts_with("/just-registered") && !rc.requestUri?starts_with("/error") && !rc.requestUri?starts_with("/signin")>?redirect=https%3A%2F%2Fdev-mica.eucanshare.bsc.es&signin_error=https%3A%2F%2Fdev-mica.eucanshare.bsc.es%2Fsignup-with"</#if>"><@message "sign-in"/></a>
       </li>
     </#if> 
-
+    <!--
     <#if config.signupEnabled>
       <li class="nav-item">
         <a class="btn btn-outline-primary" href="/signup"><@message "sign-up"/></a>
       </li>
     </#if>
+    -->
   </#if>
 </#macro>

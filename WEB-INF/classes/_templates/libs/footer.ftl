@@ -6,7 +6,8 @@
       <strong><@message "copyright"/> &copy; 2020 <a href="${config.portalUrl!"#"}">${config.name!""}</a>.</strong> <@message "all-rights-reserved"/>
     </div>
   </#if>
-  <a href="/admin" title="<@message "administration"/>" class="float-right"><i class="fas fa-lock"></i></a>
+  <!-- <a href="/admin" title="<@message "administration"/>" class="float-right"><i class="fas fa-lock"></i></a> -->
+  <a class="float-right" href="https://dev-agate.eucanshare.bsc.es/auth/signin/eush-dev?redirect=https%3A%2F%2Fdev-mica.eucanshare.bsc.es/admin&signin_error=https%3A%2F%2Fdev-mica.eucanshare.bsc.es%2Fsignup-with"><i class="fas fa-lock"></i></a>
   <!-- Default to the left -->
   <small><@message "powered-by"/> <a href="https://www.obiba.org">OBiBa Mica</a></small>
 </footer>

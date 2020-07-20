@@ -14,9 +14,9 @@
     <a href=".."><b>${config.name!""}</b></a>
   </div>
   <!-- /.login-logo -->
-<!--  <div class="card">
+  <div class="card">
     <div class="card-body login-card-body">
-      <p class="login-box-msg"><@message "sign-in-caption"/></p>
+      <p class="login-box-msg"> Platform administrators login </p>
 
       <div id="alertFailure" class="alert alert-danger d-none">
         <small><@message "sign-in-auth-failed"/></small>
@@ -47,30 +47,14 @@
           <div class="col-6">
 
           </div>
+          <!-- /.col -->
+          <div class="col-6">
+            <button type="submit" class="btn btn-primary btn-block"><@message "sign-in-submit"/></button>
+          </div>
+          <!-- /.col -->
         </div>
       </form>
--->
-      <#if oidcProviders?? && oidcProviders?size != 0>
-        <div class="social-auth-links text-center mb-3">
-          <#list oidcProviders as oidc>
-            <a href="${oidc.url}" class="btn btn-block btn-primary">
-              <@message "sign-in-with"/> ${oidc.title}
-            </a>
-          </#list>
-        </div>
-        <!-- /.social-auth-links -->
-      </#if>
 
-      <p class="mb-1">
-        <a href="forgot-password"><@message "forgot-password"/></a>
-      </p>
-      <#if config?? && config.signupEnabled>
-        <p class="mb-0">
-          <a href="signup" class="text-center"><@message "register-new-membership"/></a>
-        </p>
-      </#if>
-    </div>
-    <!-- /.login-card-body -->
   </div>
 </div>
 <!-- /.login-box -->

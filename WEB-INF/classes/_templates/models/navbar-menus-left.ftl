@@ -49,7 +49,7 @@
 
     <#if config.dataAccessEnabled>
       <li id="dataAccessMenu" class="nav-item <#if config.repositoryEnabled && !config.projectEnabled>ml-3</#if>">
-        <a href="/data-accesses" class="btn btn-eush"><@message "data-access"/> <i class="fas fa-arrow-circle-right"></i></a>
+        <a href="https://dev-agate.eucanshare.bsc.es/auth/signin/eush-dev?redirect=https%3A%2F%2Fdev-mica.eucanshare.bsc.es/data-accesses&signin_error=https%3A%2F%2Fdev-mica.eucanshare.bsc.es%2Fsignup-with" class="btn btn-eush"><@message "data-access"/> <i class="fas fa-arrow-circle-right"></i></a>
       </li>
     </#if>
   </#if>

@@ -115,7 +115,7 @@
               </div><!-- /.col -->
               <div class="col-sm-2">
                 <div class="text-right">
-                  <button type="button"  onclick="location.href='search${defaultSearchState}';" class="btn btn-success btn-lg">
+                  <button type="button"  onclick="location.href='search${defaultSearchState}';" class="btn btn-eush btn-lg">
                     <i class="fas fa-search"></i> <@message "search"/>
                   </button>
                 </div>
@@ -134,7 +134,7 @@
               </div><!-- /.col -->
               <div class="col-sm-4">
                 <div class="text-right">
-                  <button type="button"  onclick="location.href='data-access-process';" class="btn btn-info btn-lg">
+                  <button type="button"  onclick="location.href='data-access-process';" class="btn btn-eush btn-lg">
                     <i class="fas fa-info-circle"></i> <@message "data-access-process"/>
                   </button>
                 </div>

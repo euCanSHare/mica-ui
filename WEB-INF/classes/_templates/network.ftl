@@ -55,7 +55,7 @@
                   <#if !config.singleStudyEnabled>
                     <div class="col-md-3 col-sm-6 col-12">
                       <div class="info-box">
-                        <span class="info-box-icon bg-success">
+                        <span class="info-box-icon">
                           <a href="../search#lists?type=studies&query=network(in(Mica_network.id,${network.id}))">
                             <i class="${studyIcon}"></i>
                           </a></span>
@@ -71,7 +71,7 @@
                   <#if config.studyDatasetEnabled || config.harmonizationDatasetEnabled>
                     <div class="col-md-3 col-sm-6 col-12">
                       <div class="info-box">
-                        <span class="info-box-icon bg-warning">
+                        <span class="info-box-icon">
                           <a href="../search#lists?type=datasets&query=network(in(Mica_network.id,${network.id}))">
                             <i class="${datasetIcon}"></i>
                           </a>
@@ -85,7 +85,7 @@
                     </div>
                     <div class="col-md-3 col-sm-6 col-12">
                       <div class="info-box">
-                        <span class="info-box-icon bg-danger">
+                        <span class="info-box-icon">
                           <a href="../search#lists?type=variables&query=network(in(Mica_network.id,${network.id}))">
                             <i class="${variableIcon}"></i>
                           </a>
